@@ -1,0 +1,256 @@
+{
+  "layer": "0",
+  "name": "SOW",
+  "children": [
+    {
+      "layer": 1,
+      "name": "GENERAL",
+      "children": [
+        {
+          "layer": 2,
+          "name": "General"
+        }
+      ]
+    },
+    {
+      "layer": 1,
+      "name": "SCOPE OF SERVICES AND WORK PRODUCT",
+      "children": [
+        {
+          "layer": 2,
+          "name": "ScopeandWorkProduct"
+        },
+        {
+          "layer": 2,
+          "name": "Scope"
+        },
+        {
+          "layer": 2,
+          "name": "WorkProduct"
+        },
+        {
+          "layer": 2,
+          "name": "WorkProductSpecifications"
+        },
+        {
+          "layer": 2,
+          "name": "SupportandTraining"
+        },
+        {
+          "layer": 2,
+          "name": "WrittenReports"
+        }
+      ]
+    },
+    {
+      "layer": 1,
+      "name": "ACCEPTANCE CRITERIA AND TESTING PROCEDURES",
+      "children": [
+        {
+          "layer": 2,
+          "name": "AcceptanceCriteriaandTesting"
+        },
+        {
+          "layer": 2,
+          "name": "AcceptanceCriteria"
+        },
+        {
+          "layer": 2,
+          "name": "Testing"
+        },
+        {
+          "layer": 2,
+          "name": "AcceptanceMilestones"
+        }
+      ]
+    },
+    {
+      "layer": 1,
+      "name": "RESOURCES TO BE PROVIDED BY SUPPLIER",
+      "children": [
+        {
+          "layer": 2,
+          "name": "ResourcebySupplier"
+        },
+        {
+          "layer": 2,
+          "name": "SupplierPreExistingProperty"
+        },
+        {
+          "layer": 2,
+          "name": "OtherSupplierResources"
+        },
+        {
+          "layer": 2,
+          "name": "ThirdPartyProperty"
+        }
+      ]
+    },
+    {
+      "layer": 1,
+      "name": "RESOURCES TO BE PROVIDED BY CISCO",
+      "children": [
+        {
+          "layer": 2,
+          "name": "ResourcebyCompany"
+        },
+        {
+          "layer": 2,
+          "name": "CiscoPreExistingProperty"
+        },
+        {
+          "layer": 2,
+          "name": "CompanyResources"
+        },
+        {
+          "layer": 2,
+          "name": "LicensedPrograms"
+        }
+      ]
+    },
+    {
+      "layer": 1,
+      "name": "CONFIDENTIAL INFORMATION",
+      "children": [
+        {
+          "layer": 2,
+          "name": "ConfidentialInformation"
+        },
+        {
+          "layer": 2,
+          "name": "NDACompanyRestrict"
+        },
+        {
+          "layer": 2,
+          "name": "NDASupplierRestrict"
+        }
+      ]
+    },
+    {
+      "layer": 1,
+      "name": "PROJECT MANAGERS",
+      "children": [
+        {
+          "layer": 2,
+          "name": "ProjectManagers"
+        }
+      ]
+    },
+    {
+      "layer": 1,
+      "name": "PAYMENT",
+      "children": [
+        {
+          "layer": 2,
+          "name": "Payment"
+        },
+        {
+          "layer": 2,
+          "name": "PaymentTerms"
+        },
+        {
+          "layer": 2,
+          "name": "PaymentMethod"
+        },
+        {
+          "layer": 2,
+          "name": "Expenses"
+        },
+        {
+          "layer": 2,
+          "name": "RateCardCR"
+        }
+      ]
+    },
+    {
+      "layer": 1,
+      "name": "PLACE OF PERFORMANCE",
+      "children": [
+        {
+          "layer": 2,
+          "name": "WorkLocation"
+        }
+      ]
+    },
+    {
+      "layer": 1,
+      "name": "TERM OF STATEMENT OF WORK",
+      "children": [
+        {
+          "layer": 2,
+          "name": "TermSOW"
+        }
+      ]
+    },
+    {
+      "layer": 1,
+      "name": "CHANGE REQUEST PROCESS",
+      "children": [
+        {
+          "layer": 2,
+          "name": "ChangeRequest"
+        }
+      ]
+    },
+    {
+      "layer": 1,
+      "name": "SPECIAL TERMS",
+      "children": [
+        {
+          "layer": 2,
+          "name": "SpecialTerms"
+        }
+      ]
+    },
+    {
+      "layer": 1,
+      "name": "WARRANTIES",
+      "children": [
+        {
+          "layer": 2,
+          "name": "Warranties"
+        }
+      ]
+    },
+    {
+      "layer": 1,
+      "name": "CODE OF ETHICS",
+      "children": [
+        {
+          "layer": 2,
+          "name": "Ethics"
+        }
+      ]
+    },
+    {
+      "layer": 1,
+      "name": "STATEMENT OF WORK SIGNATURE REQUIREMENTS",
+      "children": [
+        {
+          "layer": 2,
+          "name": "WorkSignatureRequirements"
+        }
+      ]
+    },
+    {
+      "layer": 1,
+      "name": "Appendix A: Rate Card for Change Orders",
+      "children": [
+        {
+          "layer": 2,
+          "name": "AppendixA"
+        }
+      ]
+    },
+	{
+      "layer": 1,
+      "name": "Appendix B: Fixed Cost Breakdown",
+      "children": [        
+		{
+          "layer": 2,
+          "name": "AppendixB"
+        }
+      ]
+    } 
+  ]
+}

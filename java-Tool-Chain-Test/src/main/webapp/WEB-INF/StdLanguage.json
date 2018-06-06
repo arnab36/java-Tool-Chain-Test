@@ -1,0 +1,278 @@
+{
+	"EstimatesOnAssumptions": [
+		{
+			"text": "This SOW and SUPPLIER estimates are based on the following key assumptions Deviations that arise will be managed through the procedure described in in Appendix "
+		},
+		{
+			"text": "The timeline contained in this SOW is based on the following assumptions"
+		},
+		{
+			"text": "SUPPLIER personnel who provide or are expected to provide Services from a location that is not their primary work location may be subject to increased taxes, including U.S. federal, state, social and local taxes. "
+		},
+		{
+			"text": "This SOW and SUPPLIER estimates are based on the following exhaustive list of key assumptions. "
+		}
+		
+	],
+	
+	"PCRMayChangeFees": [
+	                    
+		{
+			"text": "Project Change Control Procedure and may result in adjustments to the project scope  estimated schedule  charges and other terms "
+		},
+		{
+			"text": "SUPPLIER will specify any charges for such investigation "
+		},
+		{
+			"text": "If any of the Key Assumptions are not met or are invalid it may cause changes to the project staffing level of effort required fees impact Supplier performance of the Services or otherwise result in a change to the terms of this Work Order "
+		},
+		{
+			"text": "The investigation and the implementation of changes may result in modifications to the Estimated Schedule  Charges  and other terms of this SOW and the Agreement "
+		},
+		{
+			"text": "SUPPLIER shall not invoice or otherwise charge fees in an amount greater than specified in the SOW without the prior written approval of Client as documented by a Project Change Request"
+		},
+		{
+			"text": "The investigation will determine the effect that the implementation of the PCR will have on price schedule and other terms and conditions of this SOW and the Agreement" 
+		}
+	],
+
+	"PaymentDue": [
+		{
+			"text": "Amounts are due upon receipt of the invoice and payable within 30 days of the invoice date to an account specified by SUPPLIER "
+		},
+		{
+			"text": "Company shall make payment Net 30 days after receipt and approval of an undisputed invoice via ACH or to the following address "
+		},
+		{
+			"text": "Payment is due upon receipt of invoice payable within 30 days, and final monthly Charges will be agreed to with Customer "
+		},
+		{
+			"text": "In the event of late payment SUPPLIER reserves the right to suspend the provision of Services and to charge interest on amounts overdue "
+		}
+	],
+	
+	"Assumptions": [
+  		{
+  			"text": "Some activities on this project may be performed on SUPPLIER premises and will be billable to COMPANY "
+  		},
+  		{
+  			"text": "SUPPLIER may use pre existing and SUPPLIER proprietary tools during this engagement to perform the SUPPLIER responsibilities "
+  		},
+  		{
+  			"text": "These tools and associated documentation are not provided to the customer under the terms of this SOW and the Agreement and remain the property of SUPPLIER  "
+  		},
+  		{
+  			"text": "COMPANY will participate in and contribute to all aspects of Project Management  including  but not limited to   project planning  providing written status  issues and risk management  "
+  		}
+  	],
+  	
+  	"Deliverables": [
+  		{
+  			"text": "This deliverable document  estimated to be up to 10 pages in length  will consist of the following content  as appropriate:"
+  		},
+  		{
+  			"text": "Delivery  SUPPLIER will deliver the project deliverables and work produces as applicable in MS word documents and or power point via e mail to the COMPANY Project Manager "
+  		},
+  		{
+  			"text": "Supplier will deliver one copy of this document in X format MS Word Powerpoint Email Adobe PDF "
+  		},
+  		{
+  			"text": "SUPPLIER under this Work Order will provide the following list of Deliverables to Company "
+  		}
+  	],
+  	
+  	"FPTerms": [
+  		{
+  			"text": "Payment may be made electronically to an account specified by SUPPLIER or by other means agreed to by the parties "
+  		},
+  		{
+  			"text": "The breakdown of the Fixed price found in Appendix B is for information purposes only "
+  		},
+  		{
+  			"text": "Supplier may not increase the Fixed price due to an incorrect estimate of work effort detailed in Appendix "
+  		},
+  		{
+  			"text": "Annual changes to Supplier rate card shall not impact this fixed price contract  Not withstanding anything else in the Agreement and this SOW to the contrary and unless otherwise agreed upon in writing by COMPANY "
+  		}	
+  	],
+  	
+  	"TMTerms": [
+  		{
+  			"text": "Supplier shall bill on a Time and Material basis  COMPANY Project Manager shall approve payment for all time expended in accordance with Section 9 and 11 of this SOW  Nothing in this Section 4 a  shall be deemed to waive any remedies available to COMPANY under this SOW  the Agreement or applicable law for Supplier failure to perform or other liability hereunder "
+  		},
+  		{
+  			"text": "Over the course of the contract  should COMPANY request support for additional services in addition to those outlined in this SOW  these services will be provided on a Time & Material basis only if approved through the formal Project Change Request Procedure as described in Appendix "
+  		},
+  		{
+  			"text": "On a weekly basis, SUPPLIER shall provide Client with a burn rate for hours, fees incurred for the week and project-to-date, and estimate to complete for hours and total fees SUPPLIER shall not exceed these fees indicated above without the prior, written consent of Client "
+  		}
+  	],
+  	
+  	"DeliverableRevisionReject": [
+		{
+			"text": "The Client recommended revisions that are not agreed to by SUPPLIER will be managed through the Project Change Control Procedure"
+		},
+		{
+			"text": "Those COMPANY revisions not agreed to by SUPPLIER will be managed in accordance with Appendix Project Change Control Procedure "
+		}
+	], 
+	
+	"DeliverableRevision": [
+		{
+			"text": "The revisions recommended by Client and agreed to by SUPPLIER will be made and the deliverable will be resubmitted and deemed accepted"
+		},
+		{
+			"text": "Those Client revisions agreed to by SUPPLIER will be made and the deliverable Material will be resubmitted to the Client Project Manager, at which time the deliverable Material will be deemed accepted"
+		},
+		{
+			"text": "The SUPPLIER Project Manager will consider Client timely request for revisions, if any, within the context of SUPPLIER obligations"
+		}
+	],
+	
+	"DeliverableTimeCheck": [
+ 		{
+ 			"text": "Within five (5) business days of receipt, the Client Project Manager will either accept the deliverable or provide SUPPLIER with a written list of requested revisions; otherwise the deliverable will be deemed accepted "
+ 		},
+ 		{
+ 			"text": "Within two  2  business days of receipt  the COMPANY Project Manager will either accept the deliverable Material or provide the SUPPLIER Project Manager a written list of requested revisions  If SUPPLIER receives no response from the COMPANY Project Manager within two  2  business days  then the deliverable Material will be deemed accepted"
+ 		},
+ 		{
+ 			"text": "Acceptance of all final Deliverable Material shall be determined in the sole but reasonable discretion of Client within five (5) business days of receipt of such Deliverable Materials or in such other timeframe as mutually agreed by the parties"
+ 		}
+ 	],
+ 	
+ 	
+	"FixedMonthlyCharges": [
+		{
+			"text": "SUPPLIER will invoice Client monthly for the Services performed in equal monthly amounts over the period of performance specified in the Estimated Schedule; OR on a milestone basis as set forth in the Payment Schedule in the Charges section plus applicable taxes "
+		},
+		{
+			"text": "The charges for this SOW are ${fee total} and will be invoiced monthly according to the below schedule   "
+		},
+		{
+			"text": "The fee schedule is provided below and will be invoiced by Service Provider each month for Progress Payments and upon Acceptance of the Deliverables or completion of the Milestone in the table below in accordance with the Project Schedule Month Phase Milestone  Deliverable Progress Payment Milestone  Deliverable Payment"
+		},
+		{
+			"text": "Application Development Duration Monthly Development Fee Total Development Fee"
+		},
+		{
+			"text": "The fixed price for this project described in section is detailed in the table below:  Invoicing will be monthly."
+		}
+	],
+	
+	"FixedCharges": [
+		{
+			"text": "The Services will be conducted on a fixed price basis."
+		},
+		{
+			"text": "The fixed price for performing the Services defined in the SOW will be "
+		},
+		{
+			"text": "The estimated professional charge for these Services is a fixed price of USD  for the -week duration and is exclusive of applicable taxes and expenses."
+		},
+		{
+			"text": "The fixed price will be billed based on the Payments Schedule Table"
+		},
+		{
+			"text": "All services are provided on a fixed price effort."
+		}
+	],
+	
+	"TravelCharges": [
+		{
+			"text": "Client will be billed actual travel and living costs estimated at x % of professional services charges "
+		},
+		{
+			"text": "All expenses incurred will be invoiced separately and consist of 1) reimbursable expenses for travel and lodging associated with US based resources traveling from their home city to Chicago, IL and 2) administrative support and other reasonable expenses incurred in connection with the Services and 3) applicable taxes"
+		},
+		{
+			"text": "are exclusive of any travel and living expenses, other reasonable expenses incurred in connection with the Services, and any applicable taxes. "
+		},
+		{
+			"text": "In addition, Supplier will invoice Client for the actual and reasonable travel and living expenses alongwith taxes incurred by project staff in providing these Services, which is estimated at ${fees} equating to 12% of the services charges. "
+		},
+		{
+			"text": "Travel and living expenses are estimated to be approximately 15% of professional fees SUPPLIER Travel Policy shall govern travel and living expenses and SUPPLIER shall utilize its standard approval process to ensure its employees compliance with such Policy prior to seeking reimbursement of travel and living expenses from COMPANY "
+		},
+		{
+			"text": "All travel and living expenses shall be based on reasonable and actual travel and living expenses, shall not exceed 15% of labor and shall be in accordance with Master Agreement Schedule"
+		}
+	],
+	
+	"TMRateTable": [
+		{
+			"text": "The T&M SOWS should have the following table headersServices    Description     Estimated Hours    Hourly Rate    Estimated Charges"
+		},
+		{
+			"text": "Role Location Hours Rate Total"
+		},
+		{
+			"text": "Rates for the following resources in the numbers and hours provided hereunder shall be as specified below"
+		},
+		{
+			"text": "Resource Title Resource Service Description Billable Unit of Measure Standard Bill Rate Bill Rate Proposed to Client Input the percentage of work to be completed by this resource type Projected Travel Expenses Onshore or Offshore? "
+		},
+		{
+			"text": "Resource skill Location Start Date End Date Weeks Hourly Rate Total Hours Fixed Estimate Professional Fees"
+		}
+	],
+
+	"EstimatedChargesOnly": [
+		{
+			"text": "The estimated Services charges are $$."
+		},
+		{
+			"text": "Any estimate given by SUPPLIER of any charge whether for planning or any other purpose is only an estimate. "
+		},
+		{
+			"text": "As these are estimated amounts, actual fees may differ."
+		},
+		{
+			"text": "Charges are estimated at fee total planning, design and development related work. "
+		},
+		{
+			"text": "Summary of Professional Services and Expenses  Professional Services and Expenses Estimated Charges Estimated Fees for this SOW"
+		}
+	],
+	
+	"AlternateLocationFees": [
+		{
+			"text": "Client shall reimburse SUPPLIER for any increased tax and compliance costs incurred by SUPPLIER personnel or by SUPPLIER on account of SUPPLIER personnel performing services in a country or state other than the one in which they are based"
+		},
+		{
+			"text": "SUPPLIER personnel who provide or are expected to provide Services from a location that is not their primary work location may be subject to increased taxes, including US federal, state, social and local taxes "
+		},
+		{
+			"text": "For such personnel, Client will be responsible for, and will pay, the increased expenses related to federal, state, social and local tax assistance provided by SUPPLIER to the affected SUPPLIER personnel, as well as any increased tax and compliance costs incurred by SUPPLIER personnel.  "
+		},
+		{
+			"text": "In the case of such work assignments at a single work location for more than one (1) year, SUPPLIER will, if requested by Client, manage the length of these assignments to minimize the amount of such increased tax liabilities, and may involve the removal of such personnel from this non primary work location prior to the one (1) year anniversary."
+		}
+	],
+
+"TMCharges": [
+		{
+			"text": "This project will be conducted on a time and material  T&M  basis"
+		},
+		{
+			"text": "The labor described herein will be performed on a not to exceed (NTE) time and materials basis at the labor rates"
+		},
+		{
+			"text": "SUPPLIER will invoice COMPANY based on the hourly rates of the people assigned to the project on a monthly basis "
+		},
+		{
+			"text": "The Services will be conducted on a time and materials basis per the table below"
+		},
+		{
+			"text": "The Fees under this SOW will be paid on a Time and Materials basis, based on the number of hours worked not to exceed a total amount of $"
+		},
+		{
+			"text": "Total estimated Time and Materials Fees are ${fee total} and shall be invoiced by Consultant on a monthly basis subject to the following:"
+		}
+		
+	]
+	
+
+
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Cisco Watson Contract Advisor View strategy</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="" />
+	<!-- css -->
+	<link href="./static/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="./static/css/style.css" rel="stylesheet" />
+	<link href="./static/css/custom-styles.css" rel="stylesheet" />
+	
+</head>
+<body>
+<div id="wrapper">
+	<!-- start header -->
+	<header>			
+        <div class="navbar-static-top nav-innerpg">
+            <div class="container-flued">
+                <div class="navbar-header">
+                    <a class="brand" href="home"><img src="./static/img/Cisco_logo_blue.png" alt="" width="140" height="84" /></a>
+                </div>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+						<li> <a href="#" id="logout" class="logout" > Log out</a> </li>    
+					    <li id="user_name_palce"></li>                      
+                    </ul>
+                </div>
+            </div>
+			<hr class="nav-bottom-gradient"/>
+        </div>
+	</header>
+	<!-- end header -->
+	<section class="">		
+		<div class="container">	
+            <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="main-head">Create new strategy</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="strategy-label"> Strategy Name <input type="text" id="new_strategy_name"/> </div>
+                    </div>
+            </div>		
+            <!-- Define Classes Group -->
+           <div id="defineClass">
+                <h3 class="sub-head"> DEFINE CLASSES </h3>
+                <div class="table-responsive accordion-header">          
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th>Class Name</th>
+                            <th>Raw Score</th>
+                            <th> Weight</th>
+                            <th> Min Count</th>
+                            <th>Mandatory Class</th>
+                            <th>Min Score</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#Legal">
+                            <h4 class="panel-title" >
+                                <a href="#Legal">Legal</a>
+                            </h4>
+                        </div>
+                        
+                        <div id="Legal" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <div class="table-responsive">          
+                                    <table class="table" id="Legal_Table">
+                                        <tbody> 
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#Payment">
+                            <h4 class="panel-title" >
+                                <a href="#Legal">Payment</a>
+                            </h4>
+                        </div>
+
+                        <div id="Payment" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="table-responsive">          
+                                    <table class="table" id="Payment_Table">
+                                        <tbody>                                        
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#Company">
+                            <h4 class="panel-title" >
+                                <a href="#Legal">Company</a>
+                            </h4>
+                        </div>
+
+                        <div id="Company" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="table-responsive">          
+                                    <table class="table" id="Company_Table">
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#Supplier">
+                            <h4 class="panel-title" >
+                                <a href="#Legal">Supplier</a>
+                            </h4>
+                        </div>
+
+                        <div id="Supplier" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="table-responsive">          
+                                    <table class="table" id="Supplier_Table" >                                        
+                                        <tbody>                                        
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#additionalTerms">
+                            <h4 class="panel-title" >
+                                <a href="#additionalTerms">Additional Terms</a>
+                            </h4>
+                        </div>
+
+                        <div id="additionalTerms" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="table-responsive">          
+                                    <table class="table" id="AdditionalTerms_Table" >                                        
+                                        <tbody>                                        
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#Informational">
+                            <h4 class="panel-title" >
+                                <a href="#Informational">Informational</a>
+                            </h4>
+                        </div>
+                        <div id="Informational" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="table-responsive">          
+                                    <table class="table" id="Informational_Table">                                        
+                                        <tbody>                                        
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#workDescription">
+                            <h4 class="panel-title" >
+                                <a href="#workDescription">Work Description</a>
+                            </h4>
+                        </div>
+                        <div id="workDescription" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="table-responsive">          
+                                    <table class="table" id="WorkDescription_Table">                                        
+                                        <tbody>                                        
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#Deliverables">
+                            <h4 class="panel-title" >
+                                <a href="#Deliverables">Deliverables</a>
+                            </h4>
+                        </div>
+
+                        <div id="Deliverables" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="table-responsive">          
+                                    <table class="table" id="Deliverables_Table">
+                                        <tbody>                                        
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <!-- Define Classes Group End:: data-dismiss="modal" -->          
+           
+		</div>
+	</section>
+	
+</div>
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./static/js/jquery.min.js"></script>
+<script src="./static/js/bootstrap.min.js"></script>
+<script src="./static/js/utility.js"></script>	
+
+<script type="text/javascript">
+		
+</script>
+
+<script src="./static/js/script_for_view_startegy.js"></script>	
+<!-- <script src="./static/js/custom.js"></script>  -->
+
+</body>
+</html>

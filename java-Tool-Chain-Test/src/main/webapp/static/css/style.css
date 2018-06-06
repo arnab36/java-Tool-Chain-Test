@@ -1,0 +1,141 @@
+
+/* ==== Google font ==== */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic,900|Open+Sans:300,400,600,700');
+
+body {
+    font-family: 'Roboto', sans-serif;
+	font-size:14px;
+	font-weight:300;
+	line-height:1.6em;
+	color:#656565;
+    background: #edf0f7; /* changes here */
+}
+
+/* new style */
+.container{
+    background: #fff;
+}
+
+.row.row-clear{
+    margin-bottom: 0 !important;
+}
+
+.row.row-clear-left-right{
+    margin-right: 0 !important;
+    margin-left: 0!important;
+}
+
+
+body.loginpage{
+    background: url(../img/cisco_login_bg.jpg) no-repeat top center;
+}
+a:active {
+	outline:0;
+}
+
+.clear {
+	clear:both;
+}
+
+h1,h2, h3, h4, h5, h6 {
+	font-family:'Roboto', sans-serif;
+	font-weight:700;
+	line-height:1.1em;
+	color:#666;
+	margin-bottom: 20px;
+}
+
+.color-white {
+	color: #fff;
+}
+
+/* ===================================
+layout
+==================================== */
+
+#wrapper {
+	width:100%;
+	margin:0;	
+	padding:0;
+}
+.row,.row-fluid {
+	margin-bottom:30px;
+}
+
+.row .row,.row-fluid .row-fluid{
+	margin-bottom:30px;
+}
+
+.row.nomargin,.row-fluid.nomargin {
+	margin-bottom:0;
+}
+
+/* ===================================
+ Responsive media
+==================================== */
+
+header .navbar {
+    margin-bottom: 0;
+}
+
+ul.navbar-nav {
+    float: right;
+    margin-right: 0;
+}
+
+header .navbar-default{
+    background-color: #fff;
+	border-bottom: 1px solid #ddd;
+}
+
+/*header .navbar {
+    min-height: 60px;
+}*/
+
+header .navbar-nav > li  {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+
+/* --- menu --- */
+
+header .navigation {
+	float:right;
+}
+
+
+.validation {
+    color: red;
+    display:none;
+    margin: 0 0 20px;
+    font-weight:400;
+    font-size:13px;
+}
+
+
+#errormessage {
+    color: red;
+    display:none;
+    border:1px solid red;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+
+/* For login page */
+.loginpage .container {
+    background: none;
+}
+
+
+/* margin over write CSS */
+
+.clear-margin-bottom{
+	margin-bottom:0 !important;
+}
+
+
+

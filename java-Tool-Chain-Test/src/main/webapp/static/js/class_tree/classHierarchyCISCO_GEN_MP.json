@@ -1,0 +1,178 @@
+{
+    "name": "SOW",
+	"layer": "0",
+    "children": [
+        {
+            "name": "Legal",
+			"layer": "1",
+            "children": [
+                {
+                    "name": "NDACompanyRestrict",
+					"layer": "2",
+					"definition": "This is the restrictions of disclosure placed on the COMPANY by the Supplier so the SOW 'ideas' cannot be shared."
+                },
+                {
+                    "name": "NDASupplierRestrict",
+					"layer": "2",
+					"definition": "This is the restriction of disclosure placed on the SUPPLIER by the Company so the SOW 'ideas' cannot be shared."
+                },
+                {
+                    "name": "AdherencetoLaws",
+					"layer": "2",
+					"definition": "Clause that says both companies will follow laws and regulations."
+                },
+                {
+                    "name": "IntellectualCapital",
+					"layer": "2",
+					"definition": "Any clauses describing Intellectual Capital Protections or assumptions."
+                },
+                {
+                    "name": "Compliance",
+					"layer": "2",
+					"definition": "Onbaording, property agreement that either party must COMPLY to."
+                },
+				{
+                    "name": "GoverningContract",
+					"layer": "2",
+					"definition": "Clauses that say which contract can govern over another. This classification also includes Master Services Agreement that reference a larger agreement saying the SOW is under that guidance."
+                },
+				{
+                    "name": "ChangeControl",
+					"layer": "2",
+					"definition": "This is a Scope Management Language."
+                }
+            ]
+        },
+        {
+            "name": "Payment",
+			"layer": "1",
+            "children": [
+                {
+                    "name": "TMTerms",
+					"layer": "2",
+					"definition": "Explination of T&M Payment Terms."
+                },
+                {
+                    "name": "FPTerms",
+					"layer": "2",
+					"definition": "Explination of Fixed Price Payment Terms."
+                },
+                {
+                    "name": "PaymentTerms",
+					"layer": "2",
+					"definition": "Late payments, early payments, when payments are due, format of payments."
+                }
+            ]
+        },
+		
+		{
+            "name": "Company",
+			"layer": "1",
+            "children": [
+                {
+                    "name": "CompanyActivities",
+					"layer": "2",
+					"definition": "These are the actions or activities the Company will 'do' under the agreement."
+                },
+                {
+                    "name": "CompanyRolesandResponsibilities",
+					"layer": "2",
+					"definition": "The Staffing the Company is to bring to the work."
+                }
+            ]
+        },
+		
+		{
+            "name": "Supplier",
+			"layer": "1",
+            "children": [
+                {
+                    "name": "SupplierActivities",
+					"layer": "2",
+					"definition": "These are the actions or activities the supplier will do under the agreement."
+                },
+                {
+                    "name": "SupplierRolesandResponsibilities",
+					"layer": "2",
+					"definition": "The Staffing the Supplier is to Bring to the work."
+                }
+            ]
+        },
+		
+		{
+            "name": "AdditionalTerms",
+			"layer": "1",
+            "children": [
+                {
+                    "name": "SpecialTerms",
+					"layer": "2",
+					"definition": "Any terms specific to this engagement especially any specific clauses made by Supplier or Cisco as well as any termination terms."
+                },
+                {
+                    "name": "TravelTerms",
+					"layer": "2",
+					"definition": "Travel Terms."
+                }
+            ]
+        },
+		
+		{
+            "name": "Informational",
+			"layer": "1",
+            "children": [
+                {
+                    "name": "TableOfContents",
+					"layer": "2",
+					"definition": "General Table of Contents."
+                }
+            ]
+        },
+		
+		{
+            "name": "WorkDescription",
+			"layer": "1",
+            "children": [
+                {
+                    "name": "ExecutiveSummary",
+					"layer": "2",
+					"definition": "This is the restriction of disclosure placed on the SUPPLIER by the Company so the SOW 'ideas' cannot be shared."
+                },
+                {
+                    "name": "WorkingConstraint",
+					"layer": "2",
+					"definition": "This is the restriction of disclosure placed on the SUPPLIER by the Company so the SOW 'ideas' cannot be shared."
+                },
+				{
+                    "name": "WorkLocation",
+					"layer": "2",
+					"definition": "This is the restriction of disclosure placed on the SUPPLIER by the Company so the SOW 'ideas' cannot be shared."
+                },
+				{
+                    "name": "Assumptions",
+					"layer": "2",
+					"definition": "This is the restriction of disclosure placed on the SUPPLIER by the Company so the SOW 'ideas' cannot be shared."
+                },
+				{
+                    "name": "AcceptanceCriteria",
+					"layer": "2",
+					"definition": "This is the restriction of disclosure placed on the SUPPLIER by the Company so the SOW 'ideas' cannot be shared."
+                }
+            ]
+        },
+		
+		{
+            "name": "Deliverables",
+			"layer": "1",
+            "children": [
+                {
+                    "name": "Deliverable",
+					"layer": "2",
+					"definition": "This is the restriction of disclosure placed on the SUPPLIER by the Company so the SOW 'ideas' cannot be shared."
+                }
+            ]
+        }		
+		
+    ]
+}
+
+

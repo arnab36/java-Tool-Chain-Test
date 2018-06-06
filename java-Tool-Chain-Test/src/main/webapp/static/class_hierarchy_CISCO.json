@@ -1,0 +1,155 @@
+{
+    "name": "SOW",
+	"layer": "0",
+    "children": [
+        {
+            "name": "Legal",
+			"layer": "1",
+            "children": [
+                {
+                    "name": "NDACompanyRestrict",
+					"layer": "2"
+                },
+                {
+                    "name": "NDASupplierRestrict",
+					"layer": "2"
+                },
+                {
+                    "name": "AdherencetoLaws",
+					"layer": "2"
+                },
+                {
+                    "name": "IntellectualCapital",
+					"layer": "2"
+                },
+                {
+                    "name": "Compliance",
+					"layer": "2"
+                },
+				{
+                    "name": "GoverningContract",
+					"layer": "2"
+                },
+				{
+                    "name": "ChangeControl",
+					"layer": "2"
+                }
+            ]
+        },
+        {
+            "name": "Payment",
+			"layer": "1",
+            "children": [
+                {
+                    "name": "TMTerms",
+					"layer": "2"
+                },
+                {
+                    "name": "FPTerms",
+					"layer": "2"
+                },
+                {
+                    "name": "PaymentTerms",
+					"layer": "2"
+                }
+            ]
+        },
+		
+		{
+            "name": "Company",
+			"layer": "1",
+            "children": [
+                {
+                    "name": "CompanyActivities",
+					"layer": "2"
+                },
+                {
+                    "name": "CompanyRolesandResponsibilities",
+					"layer": "2"
+                }
+            ]
+        },
+		
+		{
+            "name": "Supplier",
+			"layer": "1",
+            "children": [
+                {
+                    "name": "SupplierActivities",
+					"layer": "2"
+                },
+                {
+                    "name": "SupplierRolesandResponsibilities",
+					"layer": "2"
+                }
+            ]
+        },
+		
+		{
+            "name": "AdditionalTerms",
+			"layer": "1",
+            "children": [
+                {
+                    "name": "SpecialTerms",
+					"layer": "2"
+                },
+                {
+                    "name": "TravelTerms",
+					"layer": "2"
+                }
+            ]
+        },
+		
+		{
+            "name": "Informational",
+			"layer": "1",
+            "children": [
+                {
+                    "name": "TableOfContents",
+					"layer": "2"
+                }
+            ]
+        },
+		
+		{
+            "name": "WorkDescription",
+			"layer": "1",
+            "children": [
+                {
+                    "name": "ExecutiveSummary",
+					"layer": "2"
+                },
+                {
+                    "name": "WorkingConstraint",
+					"layer": "2"
+                },
+				{
+                    "name": "WorkLocation",
+					"layer": "2"
+                },
+				{
+                    "name": "Assumptions",
+					"layer": "2"
+                },
+				{
+                    "name": "AcceptanceCriteria",
+					"layer": "2"
+                }
+            ]
+        },
+		
+		{
+            "name": "Deliverables",
+			"layer": "1",
+            "children": [
+                {
+                    "name": "Deliverable",
+					"layer": "2"
+                }
+            ]
+        }		
+		
+    ]
+}
+
+

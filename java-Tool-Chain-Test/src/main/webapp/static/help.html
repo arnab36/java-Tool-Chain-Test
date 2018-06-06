@@ -1,0 +1,271 @@
+<html>
+<head>
+<title>
+Cisco SOW Advisor - Help Page
+</title>
+
+<body>
+	<!-- start header -->
+	<header>			
+        <div class="navbar-static-top nav-innerpg">
+            <div class="container">
+                <div class="navbar-header">
+                    <a title="Home" class="brand" href="home">
+						<img src="img/sow-advisor-logo.png" width="187" height="31" alt="Cisco SOW Advisor Logo" />
+					</a>
+                </div>
+               
+				<!-- <div class="navbar-collapse collapse ">							
+                    <ul class="nav navbar-nav navbar-right">
+						<li id="u_name_place"></li>
+						<li class="dropdown">
+							
+							<a class="dropdown-toggle"
+							data-toggle="dropdown"
+							href="#">
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu top-menu">		
+								<li><a href='#' id="user_id_place"></a></li> 	
+								<li> <a href="#" onClick="window.open('./static/help.html', '_blank')"> Help </a> </li> 
+								<li> <a href="#" id="logout"> Log out</a> </li> 								
+							</ul>
+						</li>
+					</ul>					
+                </div> -->
+            </div>
+			<hr class="nav-bottom-gradient"/>
+        </div>
+	</header>
+	<!-- end header -->
+	
+<table width="100%" height="100%" border="0">	
+ <!--  <tr height="10%">
+    <td colspan="2" bgcolor="#b4c7fc" >
+       <center><img src="img/help/SOWAdvisor.png"></center>   
+    </td>
+  </tr> -->
+  <!-- <tr height="5%">
+    <td colspan="2" bgcolor="">
+      <h2><font color="black"> Cisco SOW Advisor - Help </font></h2>
+    </td>
+  </tr> -->
+  <tr valign="top" height="75%">
+    <td bgcolor="#d7d5d5" width="5">
+      <b>Screens</b><br />
+      <a href="#login">1.Login</a><br />
+      <a href="#UploadAnalyze">2.Upload & Analyze</a><br />
+	  <a href="#CreateStrategy">3.Create Strategy</a><br />
+	  <a href="#ViewStrategy">4.View All Strategies</a><br />	
+	  <a href="#Results">5.Analysis Results</a><br />	
+
+       <br /> 
+<!--       <b>Help Pages</b><br /> -->
+<!--       SOW Template<br /> -->
+<!--       Guidelines for formatting SOW Headers<br /> -->
+      <br /> 
+
+      <b>Classes</b><br />
+      <a href="#NDACompanyRestrict">NDACompanyRestrict</a><br />
+      <a href="#NDASupplierRestrict">NDASupplierRestrict</a><br />
+	  <a href="#AdherancetoLaws">AdheranceToLaws</a><br />
+      <a href="#IntellectualCapital">IntellectualCapital</a><br />
+      <a href="#Compliance">Compliance</a><br />
+      <a href="#GoverningContract">GoverningContract</a><br />
+	  <a href="#ChangeControl.html">ChangeControl</a><br />
+	  <a href="#TMTerms">TMTerms</a><br />
+      <a href="#FPTerms">FPTerms</a><br />
+	  <a href="#PaymentTerms">PaymentTerms</a><br />
+	  <a href="#CompanyActivities.html">CompanyActivities</a><br />
+	  <a href="#CompanyRolesAndResponsibilities">CompanyRolesAndResponsibilities</a><br />
+      <a href="#SupplierActivities">SupplierActivities</a><br />
+      <a href="#SupplierRolesAndResponsibilities">SupplierRolesAndResponsibilities</a><br />
+      <a href="#SpecialTerms">SpecialTerms</a><br />      
+	  <a href="#TravelTerms">TravelTerms</a><br />
+	  <a href="#TableOfContents">TableOfContents</a><br />
+	  <a href="#ExecutiveSummary">ExecutiveSummary</a><br />
+	  <a href="#WorkingConstraint">WorkingConstraint</a><br />
+	  <a href="#WorkLocation">WorkLocation</a><br />
+      <a href="#Assumptions">Assumptions</a><br />      
+      <a href="#AcceptanceCriteria">AcceptanceCriteria</a><br />
+	  <a href="#Deliverable.html">Deliverable</a><br />      
+    </td>
+    <td bgcolor="#eee" width="800" height="200">
+        Cisco SOW Advisor, build using Watson Developer Cloud APIs, provides a platform for analyzing SOW documents. The tool is browser based and has an easy to use interface where the users can upload and analyze their Statement of Work (SOW) documents.
+		The user can create strategies where he/she specify the mandatory classes and the assign weights to the classes. The SOW document is analyzed against the strategy and a score calculated.
+
+		<div id='login'>
+		<a name="login">
+		<h3>1. Login</h3><p>
+		<center><img src="img/help/Cisco_Homepage.png" width="510" height="384"></center>
+		<br><br>
+		<h4><justify>This is the login page interface where a user will need to input his/her credentials in order to login. In case the user forgets his/her credentials - they can click on "Having trouble logging in?" to receive further assistance on recovering the credentials.
+		</justify></h4>
+		</a></div>
+
+		<div id='UploadAnalyze'><a name="UploadAnalyze">
+		<h3>2. Upload & Analyze</h3><p>
+		<center><img src="img/help/Cisco_UploadAnalyze.png" width="510" height="384"></center>
+		<br><br>
+		<justify>Upload and Analyze , here's where the user uploads the contract that he/she wants to analyse. 
+		There is strategy that goes behind analysing different types of contracts, 
+		using the "choose strategy" option the user can choose to use a suitable strategy for their contract else they can also use the "create new strategy" option 
+		to create a tailor-made strategy for their contract. </justify>		
+		</a></div>
+
+		
+		<div id='CreateStrategy'><a name="CreateStrategy">
+		<h3>3. Create Strategy</h3><p>
+    	<center><img src="img/help/Page_Create-New-Strategy.jpg" width="510" height="384"></center> 
+		<br><br> 
+		<justify>Strategy defines list of classes and class properties against which a SOW document should be analyzed. In order to create a new strategy to analyze your SOW you come to this page and follow these steps:
+		1)	Start by giving a Strategy name
+		2)	Then go to the Define Class Tab and select the required class category.
+		3)	Continue with assigning weight, min count, and whether the class is mandatory or not
+		4)	Click on the "done" tab.
+		</justify>		
+		</a></div>
+
+		<div id='ViewStrategy'><a name="ViewStrategy">
+		<h3>4. View Strategy</h3><p>
+ 		<center><img src="img/help/Page_View-All-Strategy.PNG" width="510" height="384"></center> 
+		<br><br>
+		<justify>The view-all strategy page shows the complete list of Strategies with their date of creation, either created by you or other users. 
+		Note – You can only view the public access strategies by other users whereas all strategies created by you either public/private can be seen here.
+		Actions you can perform for each strategy:
+		View – applicable for all strategies
+		Copy – applicable for all strategies
+		Edit – applicable only for your own strategies
+		Delete -  applicable only for your own strategies
+		</justify>		
+		</a></div>
+
+		<div id='Results'><a name="Results">
+		<h3>5. Analysis Results</h3><p> 		
+		<center><img src="img/help/Page_Score-card.jpg" width="510" height="384"></center> 
+		<br>		
+		<center><img src="img/help/Cisco_ScoreCard.jpg" width="510" height="384"></center> 
+		<br>
+		<center><img src="img/help/Page_Class-tree.jpg" width="510" height="384"></center> 
+		<br>
+		<center><img src="img/help/Page_Word-Cloud.jpg" width="510" height="384"></center> 
+		<br>
+		<br><br> 
+		<justify>This page comprises mainly of three sections:
+		1.	Score:
+		In this part, you can see the Score Meter which shows the quality of SOW. More the score towards green zone, higher is the SOW quality.
+		Score is a means of evaluating a SOW document. SOW documents are analyzed against a strategy in which a user specifies the presence/absence of classes and the weights he would assign to a class.  A SOW document is evaluated against a strategy and a score arrived at – the score varies between 0 and 100.
+		2.	Class Tree
+		In this section, Class Tree is used for analyzing whether all the mandatory classes are present or not. Watson Developer Cloud APIs classify text parsed by Cisco SOW Advisor (CSA) with a certain confidence level, if above threshold, the class label is green otherwise red. We can also see instances only for green class labels.
+		3.	Word Cloud
+		In this section, you see a word-art depiction of all Class Labels present in the SOW. The font-size of these Class Labels is related to the frequency of occurrence of that class.</justify>		
+		</a></div>   
+
+		<div id='Subclasses'><a name="Subclasses">
+		<h3>Classes</h3><p></a>
+
+		<div id='NDACompanyRestrict'><a name="NDACompanyRestrict">
+		<h4>NDACompanyRestrict</h4><p></a>		
+		<justify>This is the restrictions of disclosure placed on the COMPANY by the Supplier so the SOW "ideas" cannot be shared</justify>	
+		
+		<div id='NDASupplierRestrict'><a name="NDASupplierRestrict">
+		<h4>NDASupplierRestrict</h4><p></a>		
+		<justify>This is the restriction of disclosure placed on the SUPPLIER by the Company so the SOW "ideas" cannot be shared</justify>
+		
+		<div id='AdherencetoLaws'><a name="AdherencetoLaws">
+		<h4>AdherencetoLaws</h4><p></a>		
+		<justify>Clause that says both companies will follow laws and regulations</justify>
+
+		<div id='IntellectualCapital'><a name="IntellectualCapital">
+		<h4>IntellectualCapital</h4><p></a>		
+		<justify>Any clauses describing Intellectual Capital Protections or assumptions</justify>
+
+        <div id='Compliance'><a name="Compliance">
+		<h4>Compliance</h4><p></a>		
+		<justify>Onboarding, property agreement that either party must COMPLY to</justify>
+
+        <div id='GoverningContract'><a name="GoverningContract">
+		<h4>GoverningContract</h4><p></a>		
+		<justify>Clauses that say which contract can govern over another. This classification also includes Master Services Agreement that reference a larger agreement saying the SOW is under that guidance</justify>
+
+		<div id='ChangeControl'><a name="ChangeControl">
+		<h4>ChangeControl</h4><p></a>		
+		<justify>This is a Scope Management Language</justify>
+
+		<div id='TMTerms'><a name="TMTerms">
+		<h4>TMTerms</h4><p></a>		
+		<justify>Explanation of T&M Payment Terms</justify>
+
+		<div id='FPTerms'><a name="FPTerms">
+		<h4>FPTerms</h4><p></a>		
+		<justify>Explanation of Fixed Price Payment Terms</justify>
+
+		<div id='PaymentTerms'><a name="PaymentTerms">
+		<h4>PaymentTerms</h4><p></a>		
+		<justify>Late payments, early payments, when payments are due, format of payments</justify>
+
+		<div id='CompanyActivities'><a name="CompanyActivities">
+		<h4>CompanyActivities</h4><p></a>		
+		<justify>These are the actions or activities the Company will "do" under the agreement</justify>
+
+		<div id='CompanyRolesandResponsibilities'><a name="CompanyRolesandResponsibilities">
+		<h4>CompanyRolesandResponsibilities</h4><p></a>		
+		<justify>The Staffing the Company is to bring to the work</justify>
+
+		<div id='SupplierActivities'><a name="SupplierActivities">
+		<h4>SupplierActivities</h4><p></a>		
+		<justify>These are the actions or activities the supplier will "do" under the agreement</justify>
+
+		<div id='SupplierRolesandResponsibilities'><a name="SupplierRolesandResponsibilities">
+		<h4>SupplierRolesandResponsibilities</h4><p></a>		
+		<justify>The Staffing the Supplier is to Bring to the work</justify>
+
+		<div id='SpecialTerms'><a name="SpecialTerms">
+		<h4>SpecialTerms</h4><p></a>		
+		<justify>Any terms specific to this engagement especially any specific clauses made by Supplier or Cisco as well as any termination terms</justify>
+
+		<div id='TravelTerms'><a name="TravelTerms">
+		<h4>TravelTerms</h4><p></a>		
+		<justify>Travel terms</justify>
+
+		<div id='TableOfContents'><a name="TableOfContents">
+		<h4>TableOfContents</h4><p></a>		
+		<justify>General Table of Contents</justify>
+
+		<div id='ExecutiveSummary'><a name="ExecutiveSummary">
+		<h4>ExecutiveSummary</h4><p></a>		
+		<justify>The first section, usually purpose or overview of the work</justify>
+
+        <div id='WorkingConstraint'><a name="WorkingConstraint">
+		<h4>WorkingConstraint</h4><p></a>		
+		<justify>This is an important section that limits the work activity by some type of numerical constraint.  Letting both parties understand the boundaries of the work.  No more than 20 Database tables will be built</justify>
+
+		<div id='WorkLocation'><a name="WorkLocation">
+		<h4>WorkLocation</h4><p></a>		
+		<justify>The locations and times expected</justify>
+
+		<div id='Assumptions'><a name="Assumptions">
+		<h4>Assumptions</h4><p></a>		
+		<justify>What are the assumptions around the work that set the boundary</justify>
+
+		<div id='AcceptanceCriteria'><a name="AcceptanceCriteria">
+		<h4>AcceptanceCriteria</h4><p></a>		
+		<justify>Acceptance criteria vary according to type of deliverable or service. The Acceptance Criteria would normally include a delivery date and required quality levels of deliverables. Includes testing procedure that the deliverable must pass to be ‘accepted’ Deliverable: These are the deliverables that should come out of the work</justify>
+
+
+		</div>
+
+    </td>
+  </tr>
+  <tr height="5%">
+    <td colspan="2" bgcolor="#b4c7fc">
+      <img src="img/help/Cisco_logo.png" align="left">
+      &nbsp;
+	  &nbsp;
+	  <p align="right"><font color="white">Powered By:
+	  </font><img src="img/help/IBMWatson.png"></p>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

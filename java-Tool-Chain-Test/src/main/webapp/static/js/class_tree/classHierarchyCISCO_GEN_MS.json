@@ -1,0 +1,232 @@
+{
+    "name": "SOW",
+	"layer": "0",
+    "children": [
+        {
+            "name": "Legal",
+			"layer": "1",
+            "children": [
+                {
+                    "name": "NDACompanyRestrict",
+					"layer": "2",
+					"definition": "This is the restrictions of disclosure placed on the COMPANY by the Supplier so the SOW 'ideas' cannot be shared."
+                },
+                {
+                    "name": "NDASupplierRestrict",
+					"layer": "2",
+					"definition": "This is the restriction of disclosure placed on the SUPPLIER by the Company so the SOW 'ideas' cannot be shared."
+                },
+                {
+                    "name": "AdherencetoLaws",
+					"layer": "2",
+					"definition": "Clause that says both companies will follow laws and regulations."
+                },
+                {
+                    "name": "IntellectualCapital",
+					"layer": "2",
+					"definition": "Any clauses describing Intellectual Capital Protections or assumptions."
+                },
+                {
+                    "name": "Compliance",
+					"layer": "2",
+					"definition": "Onbaording, property agreement that either party must COMPLY to."
+                },
+				{
+                    "name": "GoverningContract",
+					"layer": "2",
+					"definition": "Clauses that say which contract can govern over another. This classification also includes Master Services Agreement that reference a larger agreement saying the SOW is under that guidance."
+                },
+				{
+                    "name": "WorkSingatureRequirements",
+					"layer": "2",
+					"definition": "specifies that the COMPANY accepts the payment conditions and the SUPPLIER agrees to complete the specified work & the contract is valid"
+                }
+            ]
+        },
+        {
+            "name": "Payment",
+			"layer": "1",
+            "children": [
+                {
+                    "name": "FPTerms",
+					"layer": "2",
+					"definition": "Explination of Fixed Price Payment Terms."
+                },
+                {
+                    "name": "PaymentTerms",
+					"layer": "2",
+					"definition": "Late payments, early payments, when payments are due, format of payments."
+                }
+            ]
+        },
+		
+		{
+            "name": "Company",
+			"layer": "1",
+            "children": [
+                {
+                    "name": "CompanyActivities",
+					"layer": "2",
+					"definition": "These are the actions or activities the Company will 'do' under the agreement."
+                },
+                {
+                    "name": "CompanyRolesandResponsibilities",
+					"layer": "2",
+					"definition": "The Staffing the Company is to bring to the work."
+                }
+            ]
+        },
+		
+		{
+            "name": "Supplier",
+			"layer": "1",
+            "children": [
+                {
+                    "name": "SupplierActivities",
+					"layer": "2",
+					"definition": "These are the actions or activities the supplier will do under the agreement."
+                },
+                {
+                    "name": "SupplierRolesandResponsibilities",
+					"layer": "2",
+					"definition": "The Staffing the Supplier is to Bring to the work."
+                }
+            ]
+        },
+		
+		{
+            "name": "AdditionalTerms",
+			"layer": "1",
+            "children": [
+                {
+                    "name": "SpecialTerms",
+					"layer": "2",
+					"definition": "Any terms specific to this engagement especially any specific clauses made by Supplier or Cisco as well as any termination terms."
+                },
+                {
+                    "name": "TravelTerms",
+					"layer": "2",
+					"definition": "Travel Terms."
+                },
+				{
+                    "name": "ThirdPartyProperty",
+					"layer": "2",
+					"definition": "Clauses that  specify the usage of any third party property by SUPPLIER to complete the Work and SUPPLIER will be responsible for the payment"
+                }
+            ]
+        },
+		
+		{
+            "name": "WorkDescription",
+			"layer": "1",
+            "children": [
+                {
+                    "name": "ExecutiveSummary",
+					"layer": "2",
+					"definition": "This is the restriction of disclosure placed on the SUPPLIER by the Company so the SOW 'ideas' cannot be shared."
+                },
+				{
+                    "name": "WorkProductSpecifications",
+					"layer": "2",
+					"definition": "specifies the technical, functional and other specifications of the work product "
+                },
+                {
+                    "name": "WorkingConstraint",
+					"layer": "2",
+					"definition": "This is the restriction of disclosure placed on the SUPPLIER by the Company so the SOW 'ideas' cannot be shared."
+                },
+				{
+                    "name": "WorkLocation",
+					"layer": "2",
+					"definition": "This is the restriction of disclosure placed on the SUPPLIER by the Company so the SOW 'ideas' cannot be shared."
+                },
+				{
+                    "name": "Assumptions",
+					"layer": "2",
+					"definition": "This is the restriction of disclosure placed on the SUPPLIER by the Company so the SOW 'ideas' cannot be shared."
+                },
+				{
+                    "name": "AcceptanceCriteria",
+					"layer": "2",
+					"definition": "This is the restriction of disclosure placed on the SUPPLIER by the Company so the SOW 'ideas' cannot be shared."
+                }
+            ]
+        },
+		
+		{
+            "name": "Services",
+			"layer": "1",
+            "children": [
+                {
+                    "name": "Service",
+					"layer": "2",
+					"definition": "These are the service offerings that should come out of the work"
+                }
+            ]
+        },
+		
+		{
+            "name": "ServiceLevelAgreement",
+			"layer": "1",
+            "children": [
+                {
+                    "name": "ServiceLevel",
+					"layer": "2",
+					"definition": "The service desired performance levels that measure the quality, quantity, timing and acceptability of the services being provided."
+                },
+				{
+                    "name": "SLATerms",
+					"layer": "2",
+					"definition": "Specifies how many SLAs to be included in order to meet the desired service level to be provided by the SUPPLIER"
+                },
+				{
+                    "name": "Monitoring",
+					"layer": "2",
+					"definition": "Describes how the performance levels are supervised and monitored"
+                },
+				{
+                    "name": "ReportResolution",
+					"layer": "2",
+					"definition": "Specify the contact details to report the problem to and the order in which details about the issue have to be reported & how they will be resolved"
+                },
+				{
+                    "name": "Escalation",
+					"layer": "2",
+					"definition": "Specifies the proceudre on failing to meet SLA for a certain time frame specified by Supplier"
+                },
+				{
+                    "name": "Termination",
+					"layer": "2",
+					"definition": "Breach of contract and termination on continuous failure to meet SLA within time frame defined in corrective action plan"
+                }
+            ]
+        },
+		
+		{
+            "name": "ChangeRequestProcess",
+			"layer": "1",
+            "children": [
+                {
+                    "name": "ChangeControl",
+					"layer": "2",
+					"definition": "This is a Scope Management Language"
+                },
+				{
+                    "name": "CRMayChangeFees",
+					"layer": "2",
+					"definition": "Ability to PCR if scope or assumptions change."
+                },
+				{
+                    "name": "CRAcceptance",
+					"layer": "2",
+					"definition": "Describes how acceptance of changes in scope will be handled"
+                }
+            ]
+        }
+
+		
+		
+    ]
+}
+
+

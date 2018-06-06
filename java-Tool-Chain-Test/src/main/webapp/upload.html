@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Cisco SOW Advisor - Upload and Analyze</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="" />
+	<!-- css -->
+	<link href="./static/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="./static/css/style.css" rel="stylesheet" />	
+	<link href="./static/css/style_for_conv.css" rel="stylesheet" />
+	<link rel="stylesheet" href="./static/css/w3.css">
+    <link rel="stylesheet" href="./static/css/w3-colors-food.css">
+	<link href="./static/css/custom-styles.css" rel="stylesheet" /> 
+	<link href="./static/css/responsive.css" rel="stylesheet" />   
+	
+    <style>
+		html, body{
+		  font-size:13px;
+		}
+		a{
+		  color: #0000FF;
+		  text-decoration: none;
+		}
+		a:hover,
+		a:focus {
+		  color: #00009C;
+		  text-decoration: underline;
+		}
+    </style>
+	
+    <!-- <script type="text/javascript" src="./static/js/socket.io.min.js"></script>	-->
+	
+</head>
+<body>
+<div id="wrapper">
+
+	<div class="chat-icon">
+		<a href="#" > Help <br> Chat </a>
+	</div>
+	
+	<!-- start old header -->
+	<header>			
+        <div class="navbar-static-top nav-innerpg">
+			<div class="container-flued">
+            	<div class="row row-clear-left-right">
+					<div class="col-md-9">
+						<div class="navbar-header">
+							<a title="Home" class="brand" id="backHome" href="#">
+								<img src="./static/img/sow-advisor-logo.png" width="187" height="31" alt="Cisco SOW Advisor Logo" />
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3">               
+						<div class="navbar-collapse collapse ">							
+							<ul class="nav navbar-nav navbar-right">
+								<li class="hidden-xs hidden-sm hidden-md"id="u_name_place"></li>
+								<li class="dropdown">									
+									<a class="dropdown-toggle"
+									data-toggle="dropdown"
+									href="#">
+										<b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu top-menu">		
+										<li><a href='#' id="user_id_place"></a></li> 	
+										<li> <a href="#" onClick="window.open('./static/help.html', '_blank')"> Help </a> </li> 
+										<li> <a href="#" id="logout"> Log out</a> </li> 								
+									</ul>
+								</li>
+							</ul>					
+						</div>
+					</div>
+            	</div>
+			</div>
+			<div class="container-flued">
+				<hr class="nav-bottom-gradient"/>
+			</div>
+        </div>
+	</header>
+	<!-- end old header -->
+	
+	<section class="">
+		<div class="container cs-device-section hidden-lg hidden-md">	
+			<div class="row">
+				<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+					<div class="create-new-strategy"> 
+						<a href="#" id="createStrategyMobile"> 
+							<span> </span> 
+							Create New Strategy 
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="container">
+			<!-- The following is a dummy form used for log out purpose. -->
+			<form role="form" id="logout_form"  method="POST"></form>	
+			
+			<form role="form" id="link_to_create_startegy" method="POST">
+				<input type="text" id="contractTypeCreate" name="contractTypeCreate" style="display:none"> 
+			</form>	
+			
+			<form role="form" id="link_to_view_strategies" action=" {{ url_for('view_strategies') }}" method="POST">
+				<input type="text" id="contractTypeView" name="contractTypeView" style="display:none"> 
+			</form>
+			
+			<form id="loadStrategyForm" action="UploadServlet" method="GET" enctype="multipart/form-data"> 
+				<input type="text" id="userIdStrategy" name="userIdStrategy" style="display:none"> 
+				<input type="text" id="userRole" name="userRole" style="display:none"> 
+			</form>
+			
+			<div id="loadingDiv" style="display:none;">
+				<img src="./static/img/watson.gif" />
+			</div>
+
+			<div class="row row-clear">
+				<div class="col-md-12">
+					<div class="col-md-12 col-md-offset-4">
+						<div class="homepage-steps"> 
+							<span class="step1"></span>
+								<span class="step-dev"> </span>
+							<span class="step2"></span>
+								<span class="step-dev"> </span>
+							<span class="step3"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row file-upload-row">
+				<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+				
+				    <form id="analyze_form" action="AnalyseServlet" method="POST" enctype="multipart/form-data"> 
+					<!-- <form id="analyze_form" action="convertAnalyze" method="POST" enctype="multipart/form-data"> -->
+						<input type="text" id="analyzeUserId" name="analyzeUserId" style="display:none">
+						<input type="text" id="input_file_name" name="input_file_name" style="display:none"> 
+						<input type="text" id="contractType" name="contractType" style="display:none">
+						<input type="text" id="versionNumber" name="versionNumber" style="display:none"> 
+						<input type="text" id="strategyName" name="strategyName" style="display:none"> 
+					</form>	
+				
+					<form id="file_upload_form"  action="UploadServlet" method="POST" enctype="multipart/form-data" >	
+					
+						<input id="browse" name="file1" type="file" accept="application/pdf,.doc,.docx" >	
+						<input type="text" id="contractTypeDocConvert" name="contractTypeDocConvert" style="display:none">
+						<input type="text" id="input_file_name_doc" name="input_file_name_doc" style="display:none;" >
+						<input type="text" id="user_id" name="user_id" style="display:none" >
+						
+					</form>
+
+					<div class="drag-panel" id="upload_link">
+
+							<div class="row row-clear">
+								<div class="col-md-12">
+									<h2> <span> </span> Upload Document <span class="arrow-right"> </span></h2>
+								</div>
+							</div>
+							<div class="upload-content">
+								<div class="browse-file">
+									<span class="doc-name" id="doc_name"> </span>
+									<span class="file-progress"> </span>
+									<span class="file-close"> </span>
+								</div>
+								<div class="row">
+									<div class="col-md-5 col-md-offset-7">
+										<div class="browse">
+											<p> Browse Document </p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-2 col-md-offset-10" id="done">
+										<a href="#" class="btn-done"> DONE </a>
+									</div>
+								</div>
+							</div>														
+						</div>					
+					
+				</div>
+			</div>
+
+			<div class="row sow-details-row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="sow-details" >
+						<div class="row row-clear">
+							<div class="col-md-12">
+								<h2> <span> </span> SOW Classifications <span class="arrow-right"> </span></h2>
+							</div>
+						</div>
+						<div class="sow-content">
+							<div class="row">
+								<div class="col-md-3 contract-type">
+									<h3> Contract Type </h3>
+								</div>
+								<div class="col-md-3">
+									<form>
+										 <div class="dropdown">
+											<button class="btn btn-dropdown dropdown-toggle" type="button" data-toggle="dropdown"><span id="contractTypeSelected"> MP - Non FG</span>
+											<span class="caret"></span></button>
+											<ul class="dropdown-menu contract-type-menu" id="menu1">
+												<li><a href="#">MP - Non FG</a></li>
+												<li><a href="#">MS - Non FG</a></li>
+												<li><a href="#">MP - FG</a></li>
+												<li><a href="#">MS - FG</a></li>
+											</ul>
+										</div>									
+									</form>
+								</div>
+								<div class="col-md-3 contract-type">
+									<h3> Template Version</h3>
+								</div>
+								<div class="col-md-3 template-version">
+									<form>
+										 <div class="dropdown">
+											<button class="btn btn-dropdown dropdown-toggle" type="button" data-toggle="dropdown"><span id="contractVersionSelected">V_5.0 </span>
+											<span class="caret"></span></button>
+											<ul class="dropdown-menu contract-version-menu" id="menu2">
+												<li><a href="#"> V_5.0 </a></li>
+											</ul>
+										</div>									
+									</form>
+								</div>
+							</div>							
+						</div>						
+					</div>					
+				</div>
+			</div>
+
+			<div class="row create-strategy-row" >
+				<div class="col-md-10 col-md-offset-1">
+					<div class="select-strategy">
+						<div class="row row-clear">
+							<div class="col-md-12">
+								<h2> <span> </span> Select or a View a strategy <span class="arrow-right"> </span></h2>
+							</div>
+						</div>
+						<div class="strategy-content">
+							<div class="row">
+								<div class="col-xs-12 col-sm-6 col-sm-offset-1 col-md-6 col-md-offset-5">
+									<div class="choose-strategy"> Default Strategy 
+										<div class="dropdown">
+											<button class="dropdown-toggle show-strategy-here" type="button" id="ChooseStrategy" data-toggle="dropdown" >
+												Choose
+												<span class="arrow"></span>
+											</button> 
+											<ul class="dropdown-menu choose" role="menu" aria-labelledby="ChooseStrategy" id="strategyid">								
+											</ul> 
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+							 <div class="col-md-4 col-md-offset-1 hidden-xs hidden-sm">
+									<div class="create-new-strategy"> 
+										<a href="#" id="create_strategy" style="display:none"> 
+											<span> </span> 
+											Create New Strategy 
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4  col-xs-12 col-sm-5">
+									<div class="all-strategies"> 
+										<a href="#" id="view_all_strategies"> 
+											<span> </span> 
+											View All Strategies 
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>					
+					</div>					
+				</div>
+			</div>						
+						
+			<div class="row error-message" id="errormsg" hidden>
+				<div class="col-md-12">
+					<div class="alert alert-danger text-center" id="errormsg1">
+						Error text here.
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-3 col-sm-offset-4 col-md-2 col-md-offset-5">
+					 <button type="button" id="process-button" class="btn btn-primary btn-analyse"  >ANALYZE</button>
+				</div>
+			</div>
+			
+			<!-- Div is added for Conversation -->
+					<div class="w3-row-padding" id="chat" style="display:none;">
+						<div class="w3-container">
+							<header class="chat-header">								
+								<p> Help Chat</p>								
+							</header>
+							<hr class="chat-bottom-gradient" />
+
+							<div id="messageList" style="height:350px;overflow-y:scroll;">
+							<ul id="list"></ul>
+							</div>
+
+							<footer class="">
+								<textarea maxlength="140" class="" type="text" id="messageText" name="messageText" autofocus/>
+								</textarea>
+								<div class="" id="sendMessage">
+									<i class="send-icon"> </i>
+								</div>
+							</footer>
+						</div>					
+					</div>				
+			<!-- Conversation div end here  -->		
+			
+		</div>
+	</section>	
+</div>
+
+<footer class="footer">
+	<div class="container-flued">
+		<div class="row">
+			<div class="col-md-9 footer-logo">
+				<img src="./static/img/Cisco_logo_blue.png" alt="cisco logo" />
+			</div>
+			<!--<div class="col-md-6">
+			</div>-->
+			<div class="col-md-3">
+                <div class="powered-by">
+				<span> Powered by</span>
+				<img src="./static/img/watson_logo_1.png" alt="ibm watson" />
+                </div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="./static/js/jquery.min.js"></script>
+<script src="./static/js/bootstrap.min.js"></script>	
+<script src="./static/js/custom.js"></script>
+
+<script type="text/javascript">
+
+	
+	var userId,userName,error,debug,role;
+	var input_file_name=""; 	
+	var flag = 0; 
+	var analyzeFlag = false;
+	var selectedProject ="";
+	var selectedStrategyInfo = {};
+	var projectClass, priceClass,helpClassJsonName,strategyName,classHierarchyFile,contractType;
+	
+	var helpClasses = {};
+	var classHierarchy = {};
+	
+	var strategy_list_MP = {};
+	var strategy_list_MS = {};
+	
+	userId = localStorage.getItem("userId");
+	userName = localStorage.getItem("userName");
+	debug = localStorage.getItem("debug");	
+	role = localStorage.getItem("role");
+	
+	// The following should be uncommented in final deployment
+  	checkCookie(1);
+  
+	/* 
+	var queryString = new Array();
+	if (queryString.length == 0) {
+		if (window.location.search.split('?').length > 1) {
+			var params = window.location.search.split('?')[1].split('&');
+			for (var i = 0; i < params.length; i++) {
+				var key = params[i].split('=')[0];
+				var value = decodeURIComponent(params[i].split('=')[1]);
+				queryString[key] = value;
+			}
+		}
+	} 
+	*/
+	
+	$("#userIdStrategy").val(userId);
+	$("#userRole").val(localStorage.getItem("role"));	
+	
+	// All strategy information for current user
+	//strategyInfo = JSON.parse(sessionStorage.getItem("strategyInfo"));	 
+	var successResponse1 = null;
+	  
+</script>
+
+
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./static/js/script_for_home.js"></script>
+<script src="./static/js/script_for_chat.js"></script> 
+
+</body>
+</html>

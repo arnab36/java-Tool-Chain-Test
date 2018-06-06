@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cisco SOW Advisor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="cisco" />
+
+<!-- css -->
+<link href="./static/css/bootstrap.min.css" rel="stylesheet" />
+<link href="./static/css/style.css" rel="stylesheet" />
+<link href="./static/css/custom-styles.css" rel="stylesheet" />
+<link href="./static/css/responsive.css" rel="stylesheet" />
+
+
+</head>
+<body class="loginpage">
+<div id="wrapper">	
+	<section id="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-7 col-sm-offset-2 col-xs-12 ">
+					<div class="login-wrapper">
+						<div class="cisco-sow-logo">
+						</div>
+						<form role="form" id="myForm" class="register-form"  action="LoginServlet" method="POST" > 
+							<div class="form-group username">
+								<span>
+									<i class="login-user"></i>
+								</span>
+								<input type="email" name="email" id="email" class="form-control input-lg " placeholder="User name" tabindex="4"><!-- login-error-focus -->
+							</div>
+							<div class="form-group pwd">
+								<span>
+									<i class="login-user"></i>
+								</span>
+								<input type="password" name="password" class="form-control input-lg " id="password" placeholder="Password">
+							</div>
+							<div class="row">
+								<span class="login-error" id="err">  </span>
+								<div class="col-md-12"><input type="button" value="LOGIN" id="login" class="btn btn-primary btn-block btn-lg btn-login" tabindex="7"></div>
+								
+								<div class="col-md-12 align-right"><a href="register.html" class="trouble-login"> Having trouble logging in? </a> </div>	
+							</div>
+						</form>	
+					</div>
+					<!-- Added by Arnab-->					
+					<div class="login-footer">
+						<img src="./static/img/powered-by-ibm-watson.png" alt="ibm watson" />
+					</div>					
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-12">
+					<p class="cookie-text"> This website uses cookies to ensure you get the best experience on our website. Please make sure your cookies are enabled. </p>
+				</div>
+			</div>
+			
+		</div>		
+	</section>
+	
+
+	
+</div>
+<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+<!-- javascript
+    ==================================================  -->  
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./static/js/jquery.min.js"></script>
+<script src="./static/js/bootstrap.min.js"></script>
+<script src="./static/js/custom.js"></script>
+
+<script type="text/javascript">
+
+	$('#err').hide();
+	var debug = null;
+	/*var queryString = new Array();
+	if (queryString.length == 0) {
+		if (window.location.search.split('?').length > 1) {
+			var params = window.location.search.split('?')[1].split('&');
+			for (var i = 0; i < params.length; i++) {
+				var key = params[i].split('=')[0];
+				var value = decodeURIComponent(params[i].split('=')[1]);
+				queryString[key] = value;
+				console.log("Key is :: ", key);
+				console.log("Value is :: ", queryString[key]);
+				debug = queryString[key];
+			}
+		}			
+	}*/
+	console.log("Debug is :: ", debug);
+	console.log("Type :: ", typeof(debug));
+	sessionStorage.setItem("debug",debug);
+	document.cookie = "debug=" + debug;
+	
+	var ck = document.cookie;
+	checkCookie(0);
+	console.log("Cokiee is :: ", ck);
+	console.log("With IBM VCAP DOC Conversion");
+		
+		
+</script>
+	
+<script src="./static/js/script_for_login.js"></script>
+
+	
+</body>
+</html>

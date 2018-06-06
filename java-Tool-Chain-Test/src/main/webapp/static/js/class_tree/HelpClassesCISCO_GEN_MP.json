@@ -1,0 +1,187 @@
+{
+	"NDACompanyRestrict": [
+		{
+			"text": "This is the restrictions of disclosure placed on the COMPANY by the Supplier so the SOW 'ideas' cannot be shared",
+			"ref": "Refer:",
+			"href": "/help.html#NDACompanyRestrict"
+		}
+		
+	],
+	
+	"NDASupplierRestrict": [
+	                    
+		{
+			"text": "This is the restriction of disclosure placed on the SUPPLIER by the Company so the SOW 'ideas' cannot be shared",
+			"ref": "Refer",
+			"href": "/help.html#NDASupplierRestrict"
+		}
+	],
+
+	"AdherencetoLaws": [
+		{
+			"text": "Clause that says both companies will follow laws and regulations",
+			"ref": "Refer:",
+			"href": "/help.html#AdherencetoLaws"
+		}
+	],
+	
+	"IntellectualCapital": [
+  		{
+			"text": "Any clauses describing Intellectual Capital Protections or assumptions",
+			"ref": "Refer:",
+			"href": "/help.html#IntellectualCapital"
+		}
+  	],
+  	
+  	"Compliance": [
+  		{
+			"text": "Onboarding, property agreement that either party must COMPLY to",
+			"ref": "Refer:",
+			"href": "/help.html#Compliance"
+		}
+  	],
+  	
+  	"GoverningContract": [
+  		{
+			"text": "Clauses that say which contract can govern over another. This classification also includes Master Services Agreement that reference a larger agreement saying the SOW is under that guidance",
+			"ref": "Refer:",
+			"href": "/help.html#GoverningContract"
+		}
+  	],
+  	
+  	"ChangeControl": [
+  		{
+			"text": "This is a Scope Management Language",
+			"ref": "Refer:",
+			"href": "/help.html#ChangeControl"
+		}
+  	],
+
+	"TMTerms": [
+  		{
+			"text": "Explanation of T&M Payment Terms",
+			"ref": "Refer:",
+			"href": "/help.html#TMTerms"
+		}
+  	],
+
+	"FPTerms": [
+  		{
+			"text": "Explination of Fixed Price Payment Terms",
+			"ref": "Refer:",
+			"href": "/help.html#FPTerms"
+		}
+  	],
+
+	"PaymentTerms": [
+  		{
+			"text": "Late payments, early payments, when payments are due, format of payments",
+			"ref": "Refer:",
+			"href": "/help.html#PaymentTerms"
+		}
+  	],
+
+	"CompanyActivities": [
+  		{
+			"text": "These are the actions or activities the Company will 'do' under the agreement",
+			"ref": "Refer:",
+			"href": "/help.html#CompanyActivities"
+		}
+  	],
+
+	"CompanyRolesandResponsibilities": [
+  		{
+			"text": "The Staffing the Company is to bring to the work",
+			"ref": "Refer:",
+			"href": "/help.html#CompanyRolesandResponsibilities"
+		}
+  	],
+
+	"SupplierActivities": [
+  		{
+			"text": "These are the actions or activities the supplier will 'do' under the agreement",
+			"ref": "Refer:",
+			"href": "/help.html#SupplierActivities"
+		}
+  	],
+
+	"SupplierRolesandResponsibilities": [
+  		{
+			"text": "The Staffing the Supplier is to Bring to the work",
+			"ref": "Refer:",
+			"href": "/help.html#SupplierRolesandResponsibilities"
+		}
+  	],
+
+	"SpecialTerms": [
+  		{
+			"text": "Any terms specific to this engagement especially any specific clauses made by Supplier or Cisco as well as any termination terms",
+			"ref": "Refer:",
+			"href": "/help.html#SpecialTerms"
+		}
+  	],
+
+	"TravelTerms": [
+  		{
+			"text": "Travel terms",
+			"ref": "Refer:",
+			"href": "/help.html#TravelTerms"
+		}
+  	],
+
+	"TableOfContents": [
+  		{
+			"text": "General Table of Contents ",
+			"ref": "Refer:",
+			"href": "/help.html#TableOfContents"
+		}
+  	],
+
+	"ExecutiveSummary": [
+  		{
+			"text": "The first section, usually purpose or overview of the work",
+			"ref": "Refer:",
+			"href": "/help.html#ExecutiveSummary"
+		}
+  	],
+
+	"WorkingConstraint": [
+  		{
+			"text": "This is an important section that limits the work activity by some type of numerical constraint.  Letting both parties understand the boundaries of the work.  No more than 20 Database tables will be built.",
+			"ref": "Refer:",
+			"href": "/help.html#WorkingConstraint"
+		}
+  	],
+
+	"WorkLocation": [
+  		{
+			"text": "The locations and times expected",
+			"ref": "Refer:",
+			"href": "/help.html#WorkLocation"
+		}
+  	],
+
+	"Assumptions": [
+  		{
+			"text": "What are the assumptions around the work that set the boundaries",
+			"ref": "Refer:",
+			"href": "/help.html#Assumptions"
+		}
+  	],	
+
+	"AcceptanceCriteria": [
+		{
+			"text": "Acceptance criteria vary according to type of deliverable or service. The Acceptance Criteria would normally include a delivery date and required quality levels of deliverables. Includes testing procedure that the deliverable must pass to be 'accepted'",
+			"ref": "Refer:",
+			"href": "/help.html#AcceptanceCriteria"
+		}
+	],
+	
+	"Deliverable": [
+		{
+			"text": "These are the deliverables that should come out of the work",
+			"ref": "Refer: ",
+			"href": "/help.html#Deliverable"
+		}
+	]
+}

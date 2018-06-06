@@ -1,0 +1,325 @@
+/*==========  Mobile First Method  ==========*/
+
+	/* Custom, iPhone Retina */
+	@media only screen and (min-width : 320px){
+		
+	}
+
+    /* iPhone 6 */
+	@media only screen and (min-width : 375px){
+        #email, #password {
+            width: 83%;
+        }
+
+        #content .btn-login{
+            width: 98%;
+        }
+
+        .login-wrapper {
+            margin-top: 25%;
+        }
+
+        .login-wrapper {
+            width: 97%;
+        }
+
+        .man-score {
+            margin: 9px 15px;
+            width: 92%;
+        }
+
+        .footer-btn {
+            /*background-size: 98%;*/
+            /*top: -761px;*/
+        }
+        /* header styles */
+        .brand img{
+            width: 100%;
+            height: auto;
+        }
+
+        header .nav-innerpg .navbar-collapse.collapse {
+            display: block!important;
+        } 
+
+        .navbar-nav .open .dropdown-menu {
+            position: absolute;
+        }
+
+        .dropdown-menu{   
+            background-color: #fff!important;
+            border: 1px solid #ccc!important;
+            border: 1px solid rgba(0,0,0,.15)!important;
+            -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175)!important;
+            box-shadow: 0 6px 12px rgba(0,0,0,.175)!important;
+        }
+
+        header .navbar-nav > li {
+            padding: 0;
+            margin-top: 0;
+        }
+
+        header .navbar-nav > li a {
+            margin-top: 2px;
+        }
+
+        header .navbar-nav > li a .caret{
+            margin-top: -2px;
+        }
+
+        header .navbar-right .dropdown-menu {
+            top: 65px;
+            left: -103px;
+        }
+
+        .navbar-nav li.dropdown > a {
+            background-size: 40%;
+        }
+
+        #headerDropDown {
+            margin-top: 5px;
+        }
+
+        #headerDropDown .navbar-right .dropdown-menu {
+            top: 50px;
+            left: -90px;
+        }
+
+        /* footer styles */
+        .powered-by img{
+            /*width: 70%;*/
+            height: auto;
+            margin-top: 12px;
+        }
+
+        .powered-by span{
+            /*width: 60%;
+            height: auto;
+            margin: 0 0 0 30px;*/
+        }
+
+        .footer-logo img{
+            /*width: 20%;
+            height: auto;
+            margin: 20px 10px;*/
+        }
+
+        .color-wheeler{
+            margin-top: 100px;
+        }
+        /*#wordCloud svg{
+            height: auto;
+            width: 25%;
+        }*/
+
+        /* home page */
+
+        .cs-device-section {
+            margin: 10px 0;
+        }
+
+        .cs-device-section .create-new-strategy a{
+            margin: 25px 0 0 10px;
+            display: inline-block;
+        }
+
+        /*.drag-panel {
+            min-height: 150px;
+            background-size: 15%;
+            background-position: 7% 50%;
+            margin-top: 20px;
+            width: 100%;
+        }*/
+
+        .drag-panel p.browse-small {
+            margin-right: 10px; 
+            margin-top: 40px;
+            font-size: 14px;
+            min-height: 80px;
+        }
+
+        .all-strategies {
+            margin: 15px 0 0 7px;
+        }
+
+        .btn-analyse {
+            margin-left: 80px;
+        }
+
+        #defaultStrategyLabel{
+            margin-left: 8px;
+			margin-top: 22px;
+           /* float: left; */
+        }
+		
+		.result-top-sec-devices .default-strategy-label{
+			margin-left:0;
+		}
+       
+
+	}
+
+	/* Extra Small Devices, Phones */
+	@media only screen and (min-width : 480px){
+        #email, #password {
+            width: 84%;
+        }
+        #content .btn-login{
+            width: 90%;
+        }
+
+        .login-wrapper {
+            margin-top: 5%;
+        }
+
+        .footer-logo img{
+            /*width: 25%;
+            margin-left: 20%;*/
+        }
+
+        /* results page */
+        #score-left-nav {
+            /*left: -53px;
+            top: 238px;*/
+        }
+
+        .man-score {
+            margin: 0;
+            width: 100%;
+        }
+
+        .drag-panel {
+            width: 100%;
+        } 
+        .drag-panel p.browse-small {
+            margin-right: 100px; 
+        }
+
+        .color-wheeler{
+            margin-top: 0;
+        }
+
+        /* home page */
+
+        .cs-device-section {
+            margin: 10px ;
+        }
+
+        .all-strategies {
+            margin: 0px 0 0 0px;
+        }
+
+        .btn-analyse {
+            margin-left: 0px;
+        }
+
+        
+
+        
+        
+
+        
+
+	}
+
+	/* Small Devices, Tablets */
+	@media only screen and (min-width : 768px){
+         #content .btn-login {
+            width: 97.3%;
+        }
+
+        .login-wrapper {
+            margin-top: 25%;
+            margin-left: 8%;
+        }
+
+        /* results page */
+        #score-left-nav {
+            /*left: -40px;
+            top: 160px;*/
+            padding: 0;
+        }
+
+        #score-left-nav li {
+            width: 342px;
+        }
+
+        .man-score {
+            padding: 100px 55px;
+            width: 298px;
+            margin-left: 18.7%;
+        }
+
+        .color-wheeler{
+            margin-bottom: 15px;
+        }
+
+        .sow-classes-ipad-link{
+            position: absolute;
+            top: 135px;
+            left: 365px;
+            width: 336px;
+            height: 127px;
+            background: url(../img/sow-classes-score-card-ipad.png) no-repeat;
+            background-size: 50%;
+        }
+
+        /*.man-score {
+            margin: 0;
+            width: 100%;
+        }*/
+
+        
+        
+
+	}
+
+	/* Medium Devices, Desktops */
+	@media only screen and (min-width : 992px){
+        #score-left-nav {
+            /*left: -177px;
+            top: 238px;*/
+        }
+        /*.man-score {
+            margin: 0;
+            width: 100%;
+        }*/
+        .footer-btn{
+            /*background-size: 31%;*/
+            /*top: -81px;*/
+        }
+
+        /*.drag-panel {
+            min-height: 280px;
+            background-position: 10% 50%;
+        }*/
+	}
+
+	/* Large Devices, Wide Screens */
+	@media only screen and (min-width : 1200px){
+        .man-score {
+            margin-left: 0%;
+        }
+        /*.man-score {
+            margin: 0;
+            width: 100%;
+        }*/
+
+	}
+
+    @media screen and (min-width: 1400px) {
+        .container {
+            /*width: 1370px;*/
+        }
+    }
+
+    @media screen and (min-width: 1600px) {
+        .container {
+            /*width: 1570px;*/
+        }
+    }
+    @media screen and (min-width: 1900px) {
+        .container {
+            /*width: 1870px;*/
+        }
+    }

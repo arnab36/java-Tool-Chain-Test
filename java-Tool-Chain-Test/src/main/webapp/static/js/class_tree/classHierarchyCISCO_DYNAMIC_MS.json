@@ -1,0 +1,46 @@
+{
+  "children": [
+    {
+      "name": "General",
+      "layer": "1"
+    },
+    {
+      "name": "WorkProduct",
+      "layer": "1"
+    },
+    {
+      "name": "SLA",
+      "layer": "1"
+    },
+    {
+      "name": "ThirdPartyProperty",
+      "layer": "1"
+    },
+    {
+      "name": "CiscoPreExistingProperty",
+      "layer": "1"
+    },
+    {
+      "name": "PaymentMethod",
+      "layer": "1"
+    },
+    {
+      "name": "Expenses",
+      "layer": "1"
+    },
+    {
+      "name": "WorkLocation",
+      "layer": "1"
+    },
+    {
+      "name": "TermSOW",
+      "layer": "1"
+    },
+	{
+      "name": "Scope",
+      "layer": "1"
+    }
+  ],
+  "name": "SOW",
+  "layer": "0"
+}

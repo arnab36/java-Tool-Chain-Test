@@ -1,0 +1,33 @@
+{
+	"conversion_target":"answer_units",
+	"word": {
+        "heading": {
+            "fonts": [
+                {"level": 1, "min_size": 10,"bold": true },
+                {"level": 2, "min_size": 8, "max_size": 9, "bold": true}
+            ],
+            "styles": [
+                {"level": 1, "names": ["pullout heading", "pulloutheading", "heading"]},
+                {"level": 2, "names": ["subtitle"]}
+            ]
+        }
+    },
+    "pdf": {
+        "heading": {
+            "fonts": [
+                {"level": 1, "min_size": 10,"bold": true },
+                {"level": 2, "min_size": 8, "max_size": 9, "bold": true}
+            ],
+    	"styles": [
+               {"level": 1, "names": ["pullout heading", "pulloutheading", "heading"]},
+               {"level": 2, "names": ["subtitle"]}
+           ]
+        }
+    },
+    "normalized_html": {
+    	"exclude_tags_keep_content": ["font", "em", "span", "strong", "code"]
+    },
+    "answer_units": {
+        "selector_tags": ["h1","h2","h3","h4","h5","h6"]
+    }
+}

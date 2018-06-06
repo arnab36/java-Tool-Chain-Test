@@ -1,0 +1,244 @@
+{
+  "source_document_id": "", 
+  "section_titles":[
+    {
+      "title": "GENERAL",
+      "class_name":"ExecutiveSummary",
+      "type": "h1"
+    },
+    {
+      "title": "SCOPE OF SERVICES",
+      "class_name":"ExecutiveSummary",
+      "type": "h1"
+    },
+    {
+      "title": "SERVICES AND WORK PRODUCT",
+      "class_name":"SupplierActivities",
+      "type": "h1"
+    },
+    {
+      "title": "ACCEPTANCE CRITERIA AND TESTING PROCEDURES",
+      "class_name":"AcceptanceCriteria",
+      "type": "h1"
+    },
+    {
+      "title": "RESOURCES TO BE PROVIDED BY SUPPLIER",
+      "class_name":"SupplierRolesandResponsibilities",
+      "type": "h1"
+    },
+    {
+      "title": "RESOURCES TO BE PROVIDED BY COMPANY",
+      "class_name":"CompanyRolesandResponsibilities",
+      "type": "h1"
+    },
+    {
+      "title": "CONFIDENTIAL INFORMATION",
+      "class_name":"NDASupplierRestrict",
+      "type": "h1"
+    },
+    {
+        "title": "PROJECT MANAGERS",
+        "class_name":"SupplierRolesandResponsibilities",
+        "type": "h1"
+      },
+    {
+      "title": "PAYMENT",
+      "class_name":"FPTerms",
+      "type": "h1"
+    },
+    {
+        "title": "Charges",
+        "class_name":"FPTerms",
+        "type": "h1"
+     },
+     {
+         "title": "Deliverables",
+         "class_name":"Deliverable",
+         "type": "h1"
+      },
+    {
+      "title": "PLACE OF PERFORMANCE",
+      "class_name":"WorkLocation",
+      "type": "h1"
+    },
+    {
+        "title": "CHANGE REQUEST PROCESS",
+        "class_name":"ChangeControl",
+        "type": "h1"
+      },
+    {
+      "title": "TERM OF STATEMENT OF WORK",
+      "class_name":"SpeicalTerms",
+      "type": "h1"
+    },
+    {
+      "title": "SPECIAL TERMS",
+      "class_name":"SpeicalTerms",
+      "type": "h1"
+    },
+    {
+        "title": "STATEMENT OF WORK SIGNATURE REQUIREMENTS",
+        "class_name":"Governingcontract",
+        "type": "h1"
+      },
+     {
+          "title": "Company Standard Document Templates and Sample Reports",
+          "class_name":"Deliverable",
+          "type": "h1"
+      },
+      {
+          "title": "SPO Information Classification Policy",
+          "class_name":"Compliance",
+          "type": "h1"
+      },
+      {
+          "title": "Rate Card for Change Orders",
+          "class_name":"FPTerms",
+          "type": "h1"
+      },
+      {
+          "title": "Fixed Cost Breakdown",
+          "class_name":"FPTerms",
+          "type": "h1"
+      },
+      {
+          "title": "Authorised expenses",
+          "class_name":"TravelTerms",
+          "type": "h1"
+      },
+      {
+          "title": "Appendix FY Schedule",
+          "class_name":"SURVEY1",
+          "type": "h1"
+      },
+      {
+          "title": "Supplier shall provide the following Services to COMPANY",
+          "class_name":"SupplierActivities",
+          "type": "h2"
+      },
+      {
+          "title": "Work Product",
+          "class_name":"Deliverable",
+          "type": "h2"
+      },
+      {
+          "title": "Phase/Gate Deliverable Name Format",
+          "class_name":"Deliverable",
+          "type": "h2"
+      },
+      {
+          "title": "Specifications for Work Product",
+          "class_name":"Deliverable",
+          "type": "h2"
+      },
+      {
+          "title": "Support and Training",
+          "class_name":"SupplierRolesandResponsibilities",
+          "type": "h2"
+      },
+      {
+          "title": "Written Reports",
+          "class_name":"Deliverable",
+          "type": "h2"
+      },
+      {
+          "title": "Testing",
+          "class_name":"AcceptanceCriteria",
+          "type": "h2"
+      },
+      {
+          "title": "Acceptance of Milestones",
+          "class_name":"AcceptanceCriteria",
+          "type": "h2"
+      },
+      {
+          "title": "Supplier's Pre-Existing Property",
+          "class_name":"SupplierRolesandResponsibilities",
+          "type": "h2"
+      },
+      {
+          "title": "Other Supplier Resources",
+          "class_name":"Compliance",
+          "type": "h2"
+      },
+      {
+          "title": "Key Personnel Name Role Participation Primary Location",
+          "class_name":"SupplierRolesandResponsibilities",
+          "type": "h2"
+      },
+      {
+          "title": "Third Party Property",
+          "class_name":"SupplierRolesandResponsibilities",
+          "type": "h2"
+      },
+      {
+          "title": "COMPANY Pre-Existing Property and Assets",
+          "class_name":"CompanyRolesandResponsibilities",
+          "type": "h2"
+      },
+      {
+          "title": "COMPANY Resources Team Member Role Description Participation Primary Location",
+          "class_name":"CompanyRolesandResponsibilities",
+          "type": "h2"
+      },
+      {
+          "title": "COMPANY Resources",
+          "class_name":"CompanyRolesandResponsibilities",
+          "type": "h2"
+      },
+      {
+          "title": "Licensed Programs",
+          "class_name":"Governingcontract",
+          "type": "h2"
+      },
+      {
+          "title": "Description of Supplier's Confidential Information",
+          "class_name":"NDASupplierRestrict",
+          "type": "h2"
+      },
+      {
+          "title": "Description of COMPANY Confidential Information",
+          "class_name":"NDACompanyRestrict",
+          "type": "h2"
+      },
+      {
+          "title": "Description of COMPANY Confidential Information",
+          "class_name":"NDACompanyRestrict",
+          "type": "h2"
+      },
+      {
+          "title": "Maximum Payment Amount",
+          "class_name":"FPTerms",
+          "type": "h2"
+      },
+      {
+          "title": "Payment Method",
+          "class_name":"FPTerms",
+          "type": "h2"
+      },
+      {
+          "title": "Service Deliverable or Milestone Deliverable",
+          "class_name":"FPTerms",
+          "type": "h2"
+      },
+      {
+          "title": "Expenses",
+          "class_name":"TravelTerms",
+          "type": "h2"
+      },
+      {
+          "title": "Rate card for change requests",
+          "class_name":"ChangeControl",
+          "type": "h2"
+      },
+      {
+          "title": "Global Non Employee Travel and Expense Reimbursement Policy",
+          "class_name":"TravelTerms",
+          "type": "h2"
+      }
+      
+
+  ]
+}
+
+

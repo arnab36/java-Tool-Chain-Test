@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Cisco SOW Advisor - View Strategies</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="" />
+	<!-- css -->
+	<link href="./static/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="./static/css/style.css" rel="stylesheet" />
+	<link href="./static/css/custom-styles.css" rel="stylesheet" />
+	<link href="./static/css/responsive.css" rel="stylesheet" />   
+	
+</head>
+<body class="">
+<div id="wrapper">
+	
+	<div class="chat-icon">
+		<a href="#" > Help <br> Chat </a>
+	</div>
+	
+	<!-- start header -->
+	<header>       
+		<div class="navbar-static-top nav-innerpg">
+			<div class="container-flued">
+            	<div class="row row-clear-left-right">
+					<div class="col-md-9">
+						<div class="navbar-header">
+							<a title="Home" class="brand" id="backHome" href="#">
+								<img src="./static/img/sow-advisor-logo.png" width="187" height="31" alt="Cisco SOW Advisor Logo" />
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3">               
+						<div class="navbar-collapse collapse ">							
+							<ul class="nav navbar-nav navbar-right">
+								<li class="hidden-xs hidden-sm hidden-md"id="u_name_place"></li>
+								<li class="dropdown">									
+									<a class="dropdown-toggle"
+									data-toggle="dropdown"
+									href="#">
+										<b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu top-menu">		
+										<li><a href='#' id="user_id_place"></a></li> 	
+										<li> <a href="#" onClick="window.open('./static/help.html', '_blank')"> Help </a> </li> 
+										<li> <a href="#" id="logout"> Log out</a> </li> 								
+									</ul>
+								</li>
+							</ul>					
+						</div>
+					</div>
+            	</div>
+			</div>
+			<div class="container-flued">
+				<hr class="nav-bottom-gradient"/>
+			</div>
+        </div>
+	</header>
+	<!-- end header -->
+	<section class="">		
+		<div class="container">	
+            <div class="row">
+				<div class="col-md-6">
+					<h2 class="main-head"> All Strategies </h2>
+				</div>
+            </div>	
+            
+            <!-- Strategy Delete Modal -->
+            <div id="strategyDelete" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                    <div class="modal-body">
+                        <p>Are you sure you want to Delete this Strategy</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default btn-cancel" id="dont_delete_strategy" data-dismiss="modal">No</button>
+                        <button type="button" class="btn btn-success btn-ok" id="delete_strategy" data-dismiss="modal">Yes</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Strategy Copy Modal -->
+             <div id="strategyCopy" class="modal fade" role="dialog">
+                <div class="modal-dialog">                   
+                    <div class="modal-content">
+                    <div class="modal-body">
+                        <p>Copy (duplicate) Strategy: <span id="prev_strategy_name">  </span></p>
+						<div class="strategy-new-name"> As: <input type="text" id="new_strategy_name" placeholder="Give a new name"/> </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default btn-cancel" id="dont_copy_strategy" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-success btn-ok" id="copy_strategy">OK</button>
+                    </div>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- Strategy page ::-->
+            <div id="strategyTable">                
+                <div class="table-responsive">          
+                    <table class="table"id="view_user_strategies">
+                        <thead>
+                            <tr>
+                            	<th></th>									
+								<th>Strategy Creator</th>
+                                <th>Strategy name</th>
+								<th>Access Type</th>
+								<th>Action</th>
+                                <th> </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                              
+                        </tbody>
+                    </table>
+                </div>                
+            </div>
+			
+			<!-- Modal View Strategy -->
+				<!-- Modal -->
+				<div id="strategyView" class="modal fade" data-backdrop="static" role="dialog" >
+						<div class="modal-dialog modal-lg">
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									 <!--<span class="close" data-dismiss="modal">&times;</span>-->
+								</div>
+								<div class="modal-body">								
+									<div id="strategyEdit">
+										<div class="strategy-label"> Strategy Name: <span id="strategy_name_space">  </span> </div>
+										
+										<div class="panel-group" id="accordion">
+											
+										</div> 
+										
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!-- Modal View and Edit Strategy END::: -->
+
+			<!-- Div is added for Conversation -->
+				<div class="w3-row-padding" id="chat" style="display:none;">
+					<div class="w3-container">
+						<header class="chat-header">								
+								<p> Help Chat</p>									
+						</header>
+						<hr class="chat-bottom-gradient" />
+
+						<div id="messageList" style="height:350px;overflow-y:scroll;">
+						<ul id="list"></ul>
+						</div>
+
+						<footer class="">
+							<textarea maxlength="140" class="" type="text" id="messageText" name="messageText" autofocus/>
+							</textarea>
+							<div class="" id="sendMessage">
+								<i class="send-icon"> </i>
+							</div>
+						</footer>
+					</div>					
+				</div>				
+			<!-- Conversation div end here  -->		
+			
+		</div>
+	</section>
+	
+</div>
+
+<footer class="footer">
+	<div class="container-flued">
+		<div class="row">
+			<div class="col-md-9 footer-logo">
+				<img src="./static/img/Cisco_logo_blue.png" alt="cisco logo" />
+			</div>
+			<!--<div class="col-md-6">
+			</div>-->
+			<div class="col-md-3">
+                <div class="powered-by">
+				<span> Powered by</span>
+				<img src="./static/img/watson_logo_1.png" alt="ibm watson" />
+                </div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./static/js/jquery.min.js"></script>
+<script src="./static/js/bootstrap.min.js"></script>	
+<script src="./static/js/custom.js"></script>	
+
+<script type="text/javascript">
+	checkCookie(1);	
+	var strategyList = JSON.parse(sessionStorage.getItem("strategyList"));	
+	var classHierarchy = JSON.parse(sessionStorage.getItem("classHierarchy"));
+	var userId = localStorage.getItem("userId");
+	var userName = localStorage.getItem("userName");	
+	var contractType = sessionStorage.getItem("contractType");
+	var role = localStorage.getItem("role");
+	var dateString = "";
+	var dNow = new Date();		
+	dateString += (dNow.getMonth() + 1) + "/";  
+	dateString += dNow.getDate() + "/";  
+	dateString += dNow.getFullYear();  
+	var firstLevelClassCategory = [];
+	var user_strategy_data = null;
+
+	//var allStrategyInfo = JSON.parse(sessionStorage.getItem("strategyInfo"));
+	
+	var last_clicked_strategy_name = "";
+	var last_clicked_user_key = ""
+	var strategyInfoHierarchy =JSON.parse(localStorage.getItem("strategyInfoHierarchy"));
+	
+</script>
+
+<script src="./static/js/set_up_variables.js"></script>
+<script src="./static/js/script_for_view_strategies.js"></script>
+<script src="./static/js/utility.js"></script> 	
+<script src="./static/js/script_for_chat.js"></script> 
+
+</body>
+</html>
+

@@ -1,0 +1,12 @@
+{
+
+"MP-TM":["Charges", "Deliverable","ChargesTM","KeyAssumptions","TravelCharges",
+			"SupplierResponsibilities","ClientResponsibilities","CompletionCriteria","Schedule","STDTermination"],
+			
+"MP-FP":["Charges","Deliverable","KeyAssumptions","ChargesFixedPrice",
+			"TravelCharges","SupplierResponsibilities", "ClientResponsibilities","CompletionCriteria","Schedule"],
+			
+"SA":["Charges","KeyAssumptions","ChargesTM","TravelCharges","Supplier Responsibilites",
+						"ClientResponsibilities","CompletionCriteria","Schedule","STDTermination","ChangeControl","StaffAugmentation"]						
+
+}

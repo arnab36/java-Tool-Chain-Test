@@ -1,0 +1,130 @@
+/* The Modal (background) */
+.modal {
+	/* overflow-y: scroll; */
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top:200px; /* Location of the box  100 */
+	padding-left: ;  //100
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+	/* overflow-y: scroll;  */
+	position: relative;
+    background-color: #fefefe; 
+    margin: auto;
+    padding: ;
+    border: 1px solid #888;
+    width: 100px;
+	float:middle;
+}
+
+ /* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+	.modalDialog {
+		position: fixed;
+		font-family: Arial, Helvetica, sans-serif;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0,0,0,0.8);
+		z-index: 99999;
+		opacity:0;
+		-webkit-transition: opacity 400ms ease-in;
+		-moz-transition: opacity 400ms ease-in;
+		transition: opacity 400ms ease-in;
+		pointer-events: none;
+	}
+
+	.modalDialog:target {
+		opacity:1;
+		pointer-events: auto;
+	}
+
+	.modalDialog  {
+		display:none;
+		width: 400px;
+		position: realtive;
+		margin: 10% auto;
+		padding: 5px 20px 13px 20px;
+		border-radius: 10px;
+		background: #fff;
+		background: -moz-linear-gradient(#fff, #999);
+		background: -webkit-linear-gradient(#fff, #999);
+		background: -o-linear-gradient(#fff, #999);
+	}
+	
+	.img{
+		 
+		 float:middle;
+		 margin:0;
+		 position:relative;  
+		 top:;
+		 left:;	
+
+		 font-style:normal
+		 font-size: 25px;
+		 font-weight: bold;
+		 color: blue;
+		 text-align: middle;
+		 
+		}
+		
+		p.text{
+		 float:middle;
+		 margin:0;
+		 position:relative;  
+		 top:20%;
+		 left:3%;	
+
+		 font-style:normal
+		 font-size: 25px;
+		 font-weight: bold;
+		 color: blue;
+		 text-align: middle;
+		}
+/*
+	.close {
+		background: #606061;
+		color: #FFFFFF;
+		line-height: 25px;
+		position: absolute;
+		right: -12px;
+		text-align: center;
+		top: -10px;
+		width: 24px;
+		text-decoration: none;
+		font-weight: bold;
+		-webkit-border-radius: 12px;
+		-moz-border-radius: 12px;
+		border-radius: 12px;
+		-moz-box-shadow: 1px 1px 3px #000;
+		-webkit-box-shadow: 1px 1px 3px #000;
+		box-shadow: 1px 1px 3px #000;
+	}
+
+	.close:hover { background: #00d9ff; }  */

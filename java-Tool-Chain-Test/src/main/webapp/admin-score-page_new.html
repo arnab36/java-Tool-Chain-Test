@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Cisco SOW Advisor - Results </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="" />
+	<!-- css -->
+	<link href="./static/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="./static/css/style.css" rel="stylesheet" />
+	<link href="./static/css/custom-styles.css" rel="stylesheet" />
+	<link href="./static/css/score.css" rel="stylesheet" />
+		
+	<!-- These are for class Tree -->
+	<link href="./static/css/interactive_tree.css" rel="stylesheet" type="text/css" />	
+
+	<link href="./static/css/responsive.css" rel="stylesheet" />
+	
+	
+	 <!--This one is for Score Gauge-->
+	<script src="./static/js/score_gauge/d3.v4.min.js"></script> 
+	<!-- <script src="https://d3js.org/d3.v4.js"></script> -->
+	<script type="text/javascript">
+	var d3_v4 = d3;
+
+	</script>
+	<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script> -->
+	<!-- These are for class Tree -->	
+	<script src="./static/js/class_tree/d3.js"></script>  
+	<script src="./static/js/class_tree/d3.layout.js"></script> 	
+	
+	<!-- These are for word cloud -->
+	<script src="./static/js/word_cloud/d3_download.min.js"></script>
+	<!-- Do not remove -->	
+	<script src="./static/js/word_cloud/edit_cloud.js"></script>	
+	<script src="./static/js/word_cloud/algebra-0.2.5.min.js"></script>	
+	
+	<script src="./static/js/jquery.min.js"></script>
+	<script src="./static/js/bootstrap.min.js"></script>
+	<script src="./static/js/jquery.slimscroll.min.js"></script>
+	
+</head>
+<body class="score-pg">
+<div id="wrapper">
+
+	<div class="chat-icon">
+		<a href="#" > Help <br> Chat </a>
+	</div>
+	
+	<!-- start header -->
+	<header>			
+        <div class="navbar-static-top nav-innerpg">
+			<div class="container-flued">
+            	<div class="row row-clear-left-right">
+					<div class="col-md-9">
+						<div class="navbar-header">
+							<a title="Home" class="brand" id="backHome" href="#">
+								<img src="./static/img/sow-advisor-logo.png" width="187" height="31" alt="Cisco SOW Advisor Logo" />
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3">               
+						<div class="navbar-collapse collapse ">							
+							<ul class="nav navbar-nav navbar-right">
+								<li class="hidden-xs hidden-sm hidden-md"id="u_name_place"></li>
+								<li class="dropdown">									
+									<a class="dropdown-toggle"
+									data-toggle="dropdown"
+									href="#">
+										<b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu top-menu">		
+										<li><a href='#' id="user_id_place"></a></li> 	
+										<li> <a href="#" onClick="window.open('./static/help.html', '_blank')"> Help </a> </li> 
+										<li> <a href="#" id="logout"> Log out</a> </li>								
+									</ul>
+								</li>
+							</ul>					
+						</div>
+					</div>
+            	</div>
+			</div>
+			<div class="container-flued">
+				<hr class="nav-bottom-gradient"/>
+			</div>
+        </div>
+	</header>
+	<!-- end header -->
+
+	<section class="">
+		<div class="container-fluid">
+			<div class="row clear-margin-bottom">
+				<div class="col-xs-12 score-header-bg">
+                    <div class="container">
+                        <div class="row score-header">
+                            <div class="col-md-6 border-column">
+                                <label class="sow-file-name"> SOW Name : </label>
+                                <span id="name_of_file"> </span>
+                            </div>
+							<div class="col-md-6 border-column">
+								<div class="strategy-name">
+                                	<label class="default-strategy-label"> Strategy : </label>	
+									<span id="name_of_strategy"> </span>
+								</div>
+								<div class="default-strategy-btns"> 
+									<ul>
+										<li data-toggle="modal" title="View" data-target="#strategyEditView" id="just_view" class="view">
+											<a href="#"></a>
+										</li>										
+									</ul>
+								</div>								
+                            </div>
+													
+                        </div>
+                    </div>                    
+				</div>
+			</div>
+		</div>
+    </section>
+	<!--<section class="hidden-md hidden-lg result-top-sec-devices">
+		<div class="container">
+			<div class="row clear-margin-bottom">
+				<div class="col-xs-12 col-sm-5 sow-file-container">
+					<label class="sow-file-name"> SOW File :: </label> <div id="sow-file-name-mobile"> </div>
+				</div>
+				<div class="col-xs-6 col-sm-4"> 
+					<label class="default-strategy-label"> Strategy Name :: </label> <div id="defaultStrategyLabelMobile"> </div>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<div class="default-strategy-btns"> 
+						<ul>
+							<li data-toggle="modal" title="View" data-target="#strategyEditView" id="just_view_mobile" class="view"><a href="#"></a></li>
+							<li class="border"><a href="#"></a></li>
+							<li data-toggle="modal" title="Edit" data-target="#strategyEditView" id="just_edit_mobile" class="edit"><a href="#"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>								
+		</div>
+	</section>-->
+
+	<section class="">
+		<div class="col-md-12">
+			
+		<div class="container">
+			<!-- Logoout form -->
+			<form role="form" id="logout_form" action=" {{ url_for('logout') }}" method="POST"></form>
+			<div class="row">
+				<div class="col-md-12 score-bg">
+					<!--<ul id="score-left-nav" class="hidden-sm-block hidden-xs hidden-sm-down hidden-md-up">
+						<li class="score"><a href="#">Score</a></li>
+						<li class="class-tree"><a href="#">Class Tree</a></li>
+						<li class="word-cloud"><a href="#">Word Cloud</a></li>
+					</ul>	
+
+					<ul id="score-mobile-nav" class="hidden-sm hidden-md hidden-lg ">
+						<li class="score">
+							<span> </span>
+							<a href="#">Score</a>
+						</li>
+						<li class="class-tree">
+							<span> </span>
+							<a href="#">Class Tree</a>
+						</li>
+						<li class="word-cloud">
+							<span> </span>
+							<a href="#">Word Cloud</a>
+						</li>
+					</ul>					-->
+					<!--<div class="row hidden-xs hidden-sm">
+						<div class="col-md-12">
+							<div class="row clear-margin-bottom">
+								<div class="col-md-6 col-sm-5 sow-file-container">
+										<label class="sow-file-name"> SOW File :: </label> <div id="sow-file-name"> </div>
+								</div>
+								<div class="col-md-4 col-sm-4"> 
+									<label class="default-strategy-label" > Strategy Name :: </label>  <div id="defaultStrategyLabel"> </div>
+								</div>
+								<div class="col-md-2 col-sm-3">
+									<div class="default-strategy-btns"> 
+										<ul>
+											<li data-toggle="modal" title="View" data-target="#strategyEditView" id="just_view" class="view"><a href="#"></a></li>
+											<li class="border"><a href="#"></a></li>
+											<li data-toggle="modal" title="Edit" data-target="#strategyEditView" id="just_edit" class="edit"><a href="#"></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>								
+						</div>
+						
+					</div>-->
+					<div class="row">
+						<div class="col-md-12">
+							<div class="breadcrumb-links">
+								<ol class="breadcrumb" id="backToPrevPage">
+									<li class="breadcrumb-item"><a href="#">Home</a></li>
+									<li class="breadcrumb-item"><a href="#">Summary</a></li>
+									<li class="breadcrumb-item active"><a href="#"> General Score</a></li>
+								</ol>
+							</div> 
+							<ul id="score-left-nav" class="hidden-sm-block hidden-xs hidden-sm-down hidden-md-up">
+								<li class="score"><a href="#">General score result</a></li>
+								<li class="class-tree"><a href="#">Class Tree</a></li>
+								<li class="word-cloud"><a href="#">Word Cloud</a></li>
+							</ul>	
+						</div>
+					</div>
+					<div class="score-panel" id="scorePanel">
+						<div class="row">
+							<div class="col-xs-12 col-sm-10 col-sm-offset-2 col-md-4 col-md-offset-0 col-lg-4">
+								<div id="div1" class="color-wheeler">
+								<!--	<span class="sow-score-value"> </span>
+									<span class="sow-score-label"> </span>
+									<div class="footer-btn">
+										<a href="#" class="top" data-toggle="modal" data-target="#scoreModal">View Score-Card</a>
+									</div>	 -->										
+								</div>
+								<div class="sow-classes-ipad-link show-sm hidden-lg hidden-md hidden-xs"> </div>
+							</div>
+							<div class="col-xs-12 col-sm-5 col-sm-offset-2 col-md-4 col-md-offset-0 col-lg-4 man-score">
+								<div id="mandatoryScorePic" >										
+								</div>
+								<div class="mand-score"> Mandatory Class Result </div>
+							</div>
+							<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
+								<div class="score-panel-value"> 
+									<p class="contract-text" id="cost_position"></p>
+									<p class="contract-value">Contract Value ($)</p>
+									<p id="TM">	</p>								
+								</div>	
+														
+							</div>						
+						</div>
+					
+					</div>
+					<div class="score-panel" id="classTree" style="display:none; position:relative;">
+						<div id="classContentPopup" style="position:absolute; background:#fff; width:400px; right:30px; width:350px; height:400px; border:1px solid #333; overflow-y: scroll; padding: 10px; display:None" >
+							
+						</div>
+					</div>
+					
+					
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<div class="score-panel" id="wordCloud"  width = "800" height = "400" style="display:none">
+								</div>
+							</div>
+						</div>
+					
+
+					<!-- Modal -->
+					<div id="scoreModal" class="modal fade" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<!-- Modal content-->
+							<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h2 class="main-head">  SOW Classes Score-Card </h2>
+							</div>
+							<div class="modal-body">
+							<div class="row sow-name">
+								<div class="col-md-12">									 
+									<label>SOW Name:</label>
+									<span id="sow-name" > </span>
+								</div>
+							</div>
+							<div class="row category-name">
+								<div class="col-md-2 cat-name">
+									Category name
+								</div>
+								<div class="col-md-10 cat-score">
+									Category Score
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<ul id="buttons-middle">
+									
+									</ul>
+								</div>          				
+								<div class="col-md-9 tbl-panel critical" id="tablePanel">
+									<table class="table" id="scoreCardTable">
+										<tr>
+											<th>Class name</th>
+											<th>Count</th>
+											<th>Mandatory</th>
+											<th>Weighted Score</th> 
+										</tr>																		
+									</table>
+								</div>
+							</div>						
+							</div>
+
+							</div>
+
+						</div>
+					</div>					
+					<!-- Score div ends here-->	
+					
+				<!-- Modal View and Edit Strategy -->
+						<!-- Modal -->
+					<div id="strategyEditView" class="modal fade" data-backdrop="static" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h2 class="modal-title" id="modal_title_view_edit" ></h2>
+									<!-- <a class="edit-strategy" href="#"></a> -->
+								</div>
+								<div class="modal-body">								
+									<div id="strategyEdit">
+										<div class="row">
+											
+											<div class="col-md-3 created-on">
+												<label> Created on:</label>
+												<span class="created-date" id="created-date" > </span>
+											</div>
+											<div class="col-md-9 access">
+												<label> Access:</label>
+												<span class="access-value" id="access-value"> </span>
+											</div>
+										</div>										
+										
+										<div class="panel-group" id="accordion">											
+										</div> 
+										
+									</div>
+									
+									<div class="row">
+										<!-- <div class="col-md-2 col-md-offset-10">
+											<input type="button" class="btn btn-primary btn-strategy-view" id="done_editing"  value="Done"> 
+										</div> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!-- Modal View and Edit Strategy END::: -->
+					
+				</div>
+			</div>
+			<!-- Chat div-->
+			<div class="w3-row-padding" id="chat" style="display:none;">
+				<div class="w3-container">
+					<header class="chat-header">								
+							<p> Help Chat</p>								
+					</header>
+					<hr class="chat-bottom-gradient" />
+
+					<div id="messageList" style="height:350px;overflow-y:scroll;">
+					<ul id="list"></ul>
+					</div>
+
+					<footer class="">
+						<textarea maxlength="140" class="" type="text" id="messageText" name="messageText" autofocus/>
+						</textarea>
+						<div class="" id="sendMessage">
+							<i class="send-icon"> </i>
+						</div>
+					</footer>
+				</div>					
+			</div>	
+			<!-- Chat div ends here -->
+		</div>
+    </section>	
+</div>
+
+<footer class="footer">
+	<div class="container-flued">
+		<div class="row">
+			<div class="col-md-9 footer-logo">
+				<img src="./static/img/Cisco_logo_blue.png" alt="cisco logo" />
+			</div>
+			<!--<div class="col-md-6">
+			</div>-->
+			<div class="col-md-3">
+                <div class="powered-by">
+				<span> Powered by</span>
+				<img src="./static/img/watson_logo_1.png" alt="ibm watson" />
+                </div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="./static/js/custom.js"></script>	
+
+<script type="text/javascript">	
+
+	var KPIClassesBool = {};	
+	var userid,userName,fileName,logInformation,priceClass, contractType;
+	var infoSecurity,configJson,keyForClassTree;
+	
+	// For word cloud
+	var x = 0;
+	
+	// The following variables are for word-cloud.
+	var wordCloudData = {};
+	var modified_data={};
+	
+	// Temporary variable
+	var strategyCost = "12000";
+	var strategyName;
+	var strategyInfo;
+	var user_strategy_data;
+	
+	// If the following varaible is true then both the classes will show
+	var redAllowed = true;
+	
+	// Required for score calculation
+	var KPIClassesConfidence = {};
+	
+	// Required for class Tree
+	var classesContent = {};	
+	var KPIList = [];
+	var jsonHelpData = {};
+	var classHierarchy = {};
+	var contentText = {};	
+	var staticKPIList = [];
+	var staticClassesContent = {};	
+	var treeFlag = null;
+	
+	var configJson = {};
+	var list1 = [];
+	var firstLevelClassCategory = [];
+	var categoryToInclude = [];
+	var allowedClasses = {};
+	var userJsonData = [];
+	var SOW_SCORE = 0;
+	
+	checkCookie(1);	
+		
+	$(function(){
+    	$('#classContentPopup').slimScroll();
+    });	
+	
+	// For word cloud
+	var width = document.getElementById("wordCloud").getAttribute("width");
+	var height = document.getElementById("wordCloud").getAttribute("height");
+	
+	userId = sessionStorage.getItem("userId");
+	var docClassificationResult = JSON.parse(sessionStorage.getItem("generalResult"));
+	
+	var strategyThreshold = parseFloat(sessionStorage.getItem("threshold"));
+	strategyThreshold = 0.7; // Temporary. Has to be moved to the backend.
+	var redThreshold = 0.5;
+	
+	generalHierarchy = JSON.parse(sessionStorage.getItem("generalHierarchy"));
+	generalHelpData = JSON.parse(sessionStorage.getItem("generalHelpClasses"));		
+	userId = localStorage.getItem("userId");
+	userName = localStorage.getItem("userName");
+	fileName = sessionStorage.getItem("fileName");
+	
+	contractType = sessionStorage.getItem("contractType");
+	strategyName = sessionStorage.getItem("strategyName");
+	strategyInfo = JSON.parse(sessionStorage.getItem("selectedStrategyInfo"));
+	allStrategyInfo = JSON.parse(sessionStorage.getItem("strategyInfo"));
+	
+	var scoreCardFlag = true;
+	
+	// The following are class-tree variables
+	var first_level_class_color = [];
+	var vis = null;	
+	var tree = null;
+	var diagonal = null;	
+	var class_color = [];
+	var dynamicRedFlag = "GREEN";	
+	var w =  800,
+	h =  700,
+	duration = 500,
+	root;
+	
+	
+</script>
+
+
+<script src="./static/js/set_up_variables.js"></script>
+<script src="./static/js/utility.js"></script>
+<script src="./static/js/script_for_score_card.js"></script>
+<script src="./static/js/score_gauge/script_for_score_gauge.js"></script>
+ <script src="./static/js/class_tree/script_for_class_tree.js"></script>
+<script src="./static/js/word_cloud/sacle_wordify.js" ></script>  
+<script src="./static/js/view_edit_strategy.js" ></script> 
+<script src="./static/js/script_for_chat.js"></script> 
+<script src="./static/js/view_edit_strategy.js" ></script> 
+<script src="./static/js/script_for_score_page_new.js"></script> 
+
+</body>
+</html>

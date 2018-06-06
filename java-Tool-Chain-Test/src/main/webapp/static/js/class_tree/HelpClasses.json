@@ -1,0 +1,504 @@
+{
+	"EstimatesOnAssumptions": [
+		{
+			"text": "Provides a basis for our price. May be through assumptions or through scope bounding.",
+			"ref": "Use this language, This SOW and SUPPLIER estimates are based on the following key assumptions. Deviations that arise will be managed through the procedure described in Appendix.  It is even better if assumptions are listed in the scope and/or responsibilities sections and this language precedes those sections.",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/EstimatesOnAssumptions"
+		}
+		
+	],
+	
+	"PCRMayChangeFees": [
+	                    
+		{
+			"text": "Ability to PCR if scope, assumptions or other terms change. This is more than just having a PCR section, but actually referencing when it will be used.",
+			"ref": "Refer",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/PCRMayChangeFees"
+		}
+	],
+	
+	"PCRAgreement": [
+	                    
+		{
+			"text": "Both IBM and Client Project Managers will review the PCR agree,in writing, to implement it, recommend it for further investigation, or reject it. ",
+			"ref": "Refer",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/PCRAgreement"
+		}
+	],
+
+	"PaymentDue": [
+		{
+			"text": "Unless exception approval has been granted, invoices are due upon receipt, payable within 30 days.",
+			"ref": "",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/PaymentDue"
+		}
+	],
+
+	"TETCriterea": [
+		{
+			"text": "Unless exception approval has been granted, invoices are due upon receipt, payable within 30 days.",
+			"ref": "",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/TETCriterea"
+		}
+	],
+
+	"AlternateLocationFees": [
+		{
+			"text": "Client carries tax burden for out of state/country employees who incur additional taxes.  Language should be clear that client is responsible for paying these taxes.",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/AlternateLocationFees"
+		}
+	],
+
+	"TMCharges": [
+		{
+			"text": "Language should clearly state the services will be billed on a time and materials basis.",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/TMCharges"
+		}
+		
+	],
+
+	"TMRateTable": [
+		{
+			"text": "Provide a basis or reference for the T&M price to show how it is calculated.",
+			"ref": "Refer:",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/TMRateTable"
+		}
+	],
+
+	"EstimatedChargesOnly": [
+		{
+			"text": "For T&M will be based on actual hours worked. The price is estimated and actuals may vary.",
+			"ref": "Refer:",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/EstimatedChargesOnly"
+		}
+	],
+
+	"FixedMonthlyCharges": [
+		{
+			"text": "Document how the client will be invoiced for Fixed price projects.  It is usually either equal monthly payments or on a milestone basis.  The SOW should be clear and specific.",
+			"ref": "Refer",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/FixedMonthlyCharges"
+		}
+	],
+	
+	"FixedCharges": [
+		{
+			"text": "Language should clearly state that the services will be billed on a fixed price basis.",
+			"ref": "Refer:",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/FixedCharges"
+		}
+	],
+	
+	"TravelCharges": [
+		{
+			"text": "Expenses and applicable taxes are in addition to the price.",
+			"ref": "Refer:",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/TravelCharges"
+		}
+	],
+
+	"ApplicableTaxes": [
+		{
+			"text": "Client will be billed for the applicable tax incurred along with actual travel and living expenses.",
+			"ref": "Refer:",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/ApplicableTaxes"
+		}
+	],
+	
+  	"DeliverableRevisionReject": [
+		{
+			"text": "Describes the process to follow if there is no deliverable agreement between IBM and the client.",
+			"ref": "Appendix B-2 Deliverable Acceptance Procedure in the following link",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/DeliverableRevisionReject"
+		}
+	], 
+	
+	"DeliverableRevision": [
+		{
+			"text": "Describes how revisions will be handled.",
+			"ref": "Appendix B-2 Deliverable Acceptance Procedure in the following link",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/DeliverableRevision"
+		}
+	],
+	
+	"DeliverableTimeCheck": [
+ 		{
+			"text": "There is a time limit for the client to review and provide feedback. Otherwise it is deemed accepted.",
+			"ref": "Appendix B-2 Deliverable Acceptance Procedure in the following link",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/DeliverableTimeCheck"
+		}
+ 	],
+	
+	"SupplierResponsibilities": [
+		{
+			"text": "Language should clearly state the services will be billed on a time and materials basis.",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/SupplierResponsibilities"
+		}
+		
+	],
+
+	"ContractualSR": [
+		{
+			"text": "IBM Project Manager will review the SOW and the contractual responsibilities of both parties with the Client Project Manager",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/ContractualSR"
+		}
+		
+	],
+
+	"ProjectCommSR": [
+		{
+			"text": "IBM Project Manger will maintain project communications through the Client Project Manager",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/ProjectCommSR"
+		}
+		
+	],
+
+	"ProjectEnvSR": [
+		{
+			"text": "IBM Project Manager will coordinate the establishment of the project environment",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/ProjectEnvSR"
+		}
+		
+	],
+
+	"ProceduralStanSR": [
+		{
+			"text": "Language should clearly state the services will be billed on a time and materials basis.",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/ProceduralStanSR"
+		}
+		
+	],
+
+	"ProjectPlanSR": [
+		{
+			"text": "IBM Project Manager will prepare and maintain the IBM Project Plan which lists the activities, tasks, assignments, milestones and estimates for performance of this SOW",
+			"ref": "Refer ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/ProjectPlanSR"
+		}
+		
+	],
+
+	
+	"ProjectReviewSR": [
+		{
+			"text": "IBM Project Manager will review project tasks, schedules, and resources and make changes or additions, as appropriate. Measure and evaluate progress against the IBM Project Plan with the Client Project Manager.",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/ProjectReviewSR"
+		}
+		
+	],
+
+	
+	"StanInvoiceSR": [
+		{
+			"text": "Language should clearly state the services will be billed on a time and materials basis.",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/StanInvoiceSR"
+		}
+		
+	],
+
+	"ResolveDeviationsSR": [
+		{
+			"text": "IBM Project Manager will work with the Client Project Manager to address and resolve deviations from the IBM Project Plan.",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/ResolveDeviationsSR"
+		}
+		
+	],
+
+	"StatusMeetingsSR": [
+		{
+			"text": "IBM Project Manager will conduct regularly scheduled project status meetings",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/StatusMeetingsSR"
+		}
+		
+	],
+
+	"StatusReportsSR": [
+		{
+			"text": "IBM Project Manager will prepare and submit periodic Status Reports to the Client Project Manager.",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/StatusReportsSR"
+		}
+		
+	],
+
+	
+	"PCRProcedureSR": [
+		{
+			"text": "IBM Project Manager will administer the Project Change Control Procedure with the Client Project Manager.",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/PCRProcedureSR"
+		}
+		
+	],
+
+	"TechnicalActivitiesSR": [
+		{
+			"text": "IBM Project Manager will coordinate and manage the technical activities of IBM project personnel",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/TechnicalActivitiesSR"
+		}
+		
+	],
+
+	"ClientResponsibilities": [
+		{
+			"text": "Language should clearly state the services will be billed on a time and materials basis.",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/ClientResponsibilities"
+		}
+		
+	],
+
+	"ManagePersonnelCR": [
+		{
+			"text": "Client Project Manager will manage Client personnel and responsibilities for this project",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/ManagePersonnelCR"
+		}
+		
+	],
+
+	"ProjectInterfaceCR": [
+		{
+			"text": "Client Project Manager will serve as the interface between IBM and all Client departments participating in the project ",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/ProjectInterfaceCR"
+		}
+		
+	],
+
+	"AdministerPCRProcedureCR": [
+		{
+			"text": "Language should clearly state the services will be billed on a time and materials basis.",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/AdministerPCRProcedureCR"
+		}
+		
+	],
+
+	"StatusMeetingsCR": [
+		{
+			"text": "Language should clearly state the services will be billed on a time and materials basis.",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/StatusMeetingsCR"
+		}
+		
+	],
+
+	"ResponseTimeCR": [
+		{
+			"text": "Client Project Manager will obtain and provide information, data, and decisions within {three} working days of IBM's request unless Client and IBM agree in writing to a different response time. ",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/ResponseTimeCR"
+		}
+		
+	],
+
+	"DeliverablesReviewCR": [
+		{
+			"text": "Client Project Manager will review deliverables submitted by IBM in accordance with the Deliverable Acceptance Procedure ",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/DeliverablesReviewCR"
+		}
+		
+	],
+
+	"ResolveDeviationsCR": [
+		{
+			"text": "Client Project Manager will help resolve project issues and Client’s deviations from the estimated schedule, and escalate issues within Client’s organization, as necessary.",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/ResolveDeviationsCR"
+		}
+		
+	],
+
+	"ReviewBillingCR": [
+		{
+			"text": "Client Project Manager will review with the IBM Project Manager any Client invoice or billing requirements",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/ReviewBillingCR"
+		}
+		
+	],
+
+	"RequirementDeviationCR": [
+		{
+			"text": "Requirements that deviate from IBM's standard invoice format or billing procedures may have an effect on price and will be managed through the Project Change Control Procedure.",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/RequirementDeviationCR"
+		}
+		
+	],
+
+	
+	"SupplierDeliverablesCC": [
+		{
+			"text": "Language should clearly state the services will be billed on a time and materials basis.",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/SupplierDeliverablesCC"
+		}
+		
+	],
+
+        "ServiceHoursCC": [
+		{
+			"text": "IBM provides the number of hours of Services specified in the Charges section or in any approved Project Change Request or change authorization",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/ServiceHoursCC"
+		}
+		
+	],
+
+	"ServicesTerminatedCC": [
+		{
+			"text": "Client or Supplier may terminate the Services in accordance with the provisions of this SOW and the Agreement.",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/ServicesTerminatedCC"
+		}
+		
+	],
+
+	"Schedule": [
+		{
+			"text": "The Services in this SOW are estimated to be performed in a period of up to {nn} months from the agreed upon estimated start date {as shown in the Acceptance section}.",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/Schedule"
+		}
+		
+	],
+
+	"STDTermination": [
+		{
+			"text": "Language should clearly state the services will be billed on a time and materials basis.",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/STDTermination"
+		}
+		
+	],
+
+	"TerminationSettlement": [
+		{
+			"text": "Upon termination, Client will pay the charges for Services IBM provides and Products IBM delivers through termination, and all deliverables IBM has prepared through termination, whether or not completed or delivered.",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/TerminationSettlement"
+		}
+		
+	],
+
+	"TerminationCosts": [
+		{
+			"text": "Upon termination, Client will pay all costs and expenses IBM incurs in terminating the Services. ",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/TerminationCosts"
+		}
+		
+	],
+
+	"StaffAug": [
+		{
+			"text": "Language should clearly state the services will be billed on a time and materials basis.",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/StaffAug"
+		}
+		
+	],
+
+	"InfoSecurity": [
+		{
+			"text": "Language should clearly state the services will be billed on a time and materials basis.",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/InfoSecurity"
+		}
+		
+	],
+
+	"PMFrameworkSR": [
+		{
+			"text": "IBM Project Manager will establish a framework for project planning, communications, reporting,  procedural and contractual activity, and other  activities associated with the Services",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/PMFrameworkSR"
+		}
+		
+	],
+
+
+	"ProceduralStdSR": [
+		{
+			"text": "IBM Project Manager will establish documentation and procedural standards for deliverables",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/ProceduralStdSR"
+		}
+		
+	],	
+
+	"StdInvoiceSR": [
+		{
+			"text": "IBM Project Manager will establish documentation and procedural standards for deliverables",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/StdInvoiceSR"
+		}
+		
+	],
+	
+	"ResponsibilitiesFrameworkCR": [
+		{
+			"text": "Prior to the start of this project, Client will designate a person called the Client Project Manager who will be the focal point for IBM communications relative to this project and will have the authority to act on behalf of Client in all matters regarding this project.",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/ResponsibilitiesFrameworkCR"
+		}		
+	],
+	
+	"AdministerPCRProcCR": [
+		{
+			"text": "Client Project Manager will administer the Project Change Control Procedure with the IBM Project Manager.",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/AdministerPCRProcCR"
+		}		
+	],
+	
+	"SupResponsibilitiesCC": [
+		{
+			"text": "IBM satisfies the Completion Criteria set forth in IBM Responsibilities and delivers the items described in Deliverable Materials.",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/AdministerPCRProcCR"
+		}		
+	],	
+	
+	"TerminationNoticePeriod": [
+		{
+			"text": "Either party may terminate this Statement of Work by giving the other party not less than {30} days written notice.",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/TerminationNoticePeriod"
+		}		
+	],
+	
+	"DeliveryManagerSR": [
+		{
+			"text": "Prior to the start of the Services, IBM will designate a person called the IBM Application Management Services (AAD&I) Delivery Manager who will be the focal point for Client communications relative to this SOW.  The IBM AD&I Delivery Manager will have the authority to act on behalf of IBM in all matters regarding this SOW.  The IBM AD&I Delivery Manager will provide ongoing staffing oversight for the IBM responsibilities.  ",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/DeliveryManagerSR"
+		}		
+	],
+
+	
+	"ResourceAssignmentSR": [
+		{
+			"text": "IBM AD&I Delivery Manager will coordinate the assignment of IBM resources to the project",
+			"ref": "Refer: ",
+			"href": "https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Watson%20Contract%20Advisor/page/ResourceAssignmentSR"
+		}		
+	]
+
+	
+}
